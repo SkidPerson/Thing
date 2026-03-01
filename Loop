@@ -934,7 +934,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs
 
 
 
-w.i.p
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Time-blast-126010"))()
 
 ]],
 
@@ -1107,7 +1107,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/XNVWznPH"))()
 
 ]],
 
-    ["Hitler Thing.txt"] = [[
+    ["Hitler thing.txt"] = [[
 
 -- Hitler Thing
 
@@ -1125,7 +1125,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/XNVWznPH"))()
 
 
 
-
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-German-*-thing-77042"))()
 
 ]],
 }
