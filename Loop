@@ -1171,7 +1171,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs/heads/main/Scary%20moon.txt"))()
 
 ]],
-}
+
 
 
 
