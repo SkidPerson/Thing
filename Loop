@@ -934,7 +934,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs
 
 
 
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Time-blast-126010"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs/heads/main/Time%20blast.txt"))()
 
 ]],
 
@@ -1109,7 +1109,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/XNVWznPH"))()
 
     ["Dex Explorer.txt"] = [[
 
--- Hitler Thing
+-- Dex Explorer
 
 
 
@@ -1125,7 +1125,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/XNVWznPH"))()
 
 
 
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-German-*-thing-77042"))()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-latest-working-dex-explorer-93991"))()
 
 ]],
 
@@ -1150,7 +1150,28 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs
 
 ]],
 
+    ["Scary moon.txt"] = [[
 
+-- Scary Moon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs/heads/main/Scary%20moon.txt"))()
+
+]],
+}
 
 
 
