@@ -1107,7 +1107,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/XNVWznPH"))()
 
 ]],
 
-    ["Hitler thing.txt"] = [[
+    ["Dex Explorer.txt"] = [[
 
 -- Hitler Thing
 
@@ -1128,6 +1128,35 @@ loadstring(game:HttpGet("https://pastebin.com/raw/XNVWznPH"))()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-German-*-thing-77042"))()
 
 ]],
+
+    ["School Shooter.txt"] = [[
+
+-- School Shooter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SkidPerson/Thing/refs/heads/main/School%20Shooter.txt"))()
+
+]],
+
+
+
+
+
+
+
+
 }
 
 -- função criarBotao
@@ -1182,7 +1211,7 @@ local nomes = {
 	"Thomas The Dank Engine.txt",
 	"Steve MC.txt",
 	"SpiderBot.txt",
-	"Hitler thing.txt",
+	"Dex Explorer.txt",
 	"School Shooter.txt",
 	"Scary moon.txt",
     "RoXploit v1.txt",
