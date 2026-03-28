@@ -1,0 +1,3328 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+
+designed using localmaze gui creator
+]=]
+
+-- Instances: 277 | Scripts: 33 | Modules: 5 | Tags: 0
+local LMG2L = {};
+
+-- Players.FRP20000.PlayerGui.ScreenGui
+LMG2L["ScreenGui_1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+LMG2L["ScreenGui_1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+LMG2L["ScreenGui_1"]["ResetOnSpawn"] = false;
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag
+LMG2L["drag_2"] = Instance.new("Frame", LMG2L["ScreenGui_1"]);
+LMG2L["drag_2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["drag_2"]["Size"] = UDim2.new(0, 597, 0, 25);
+LMG2L["drag_2"]["Position"] = UDim2.new(0.08333, 0, 0.09814, 0);
+LMG2L["drag_2"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+LMG2L["drag_2"]["Name"] = [[drag]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Drag Gui Script
+LMG2L["Drag Gui Script_3"] = Instance.new("LocalScript", LMG2L["drag_2"]);
+LMG2L["Drag Gui Script_3"]["Name"] = [[Drag Gui Script]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.ImageLabel
+LMG2L["ImageLabel_4"] = Instance.new("ImageLabel", LMG2L["drag_2"]);
+LMG2L["ImageLabel_4"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_4"]["ImageContent"] = ;
+LMG2L["ImageLabel_4"]["Image"] = [[rbxassetid://76043639419347]];
+LMG2L["ImageLabel_4"]["Size"] = UDim2.new(0, 15, 0, 15);
+LMG2L["ImageLabel_4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ImageLabel_4"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_4"]["Position"] = UDim2.new(0.011, 0, 0.2, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.TextLabel
+LMG2L["TextLabel_5"] = Instance.new("TextLabel", LMG2L["drag_2"]);
+LMG2L["TextLabel_5"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_5"]["TextSize"] = 14;
+LMG2L["TextLabel_5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
+LMG2L["TextLabel_5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_5"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_5"]["Size"] = UDim2.new(0, 200, 0, 25);
+LMG2L["TextLabel_5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_5"]["Text"] = [[7hU6I_$tj.E$%T^YUI&^%$EWQWERTYUJYTRTYU&^%RGHJI(&(&^%4%^&&^%$%^&*JU&^%^&]];
+LMG2L["TextLabel_5"]["Position"] = UDim2.new(0.04341, 0, 0, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.TextButton
+LMG2L["TextButton_6"] = Instance.new("TextButton", LMG2L["drag_2"]);
+LMG2L["TextButton_6"]["TextWrapped"] = true;
+LMG2L["TextButton_6"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_6"]["TextSize"] = 14;
+LMG2L["TextButton_6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_6"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextButton_6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_6"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_6"]["Size"] = UDim2.new(0, 44, 0, 24);
+LMG2L["TextButton_6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_6"]["Text"] = [[_]];
+LMG2L["TextButton_6"]["Position"] = UDim2.new(0.81207, 0, 0, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.TextButton.LocalScript
+LMG2L["LocalScript_7"] = Instance.new("LocalScript", LMG2L["TextButton_6"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui
+LMG2L["Gui_8"] = Instance.new("Frame", LMG2L["drag_2"]);
+LMG2L["Gui_8"]["BorderSizePixel"] = 0;
+LMG2L["Gui_8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Gui_8"]["Size"] = UDim2.new(0, 11, 0, 15);
+LMG2L["Gui_8"]["Position"] = UDim2.new(0, 0, 1.12, 0);
+LMG2L["Gui_8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Gui_8"]["Name"] = [[Gui]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe
+LMG2L["Exe_9"] = Instance.new("Frame", LMG2L["Gui_8"]);
+LMG2L["Exe_9"]["BackgroundColor3"] = Color3.fromRGB(248, 248, 248);
+LMG2L["Exe_9"]["Size"] = UDim2.new(0, 597, 0, 411);
+LMG2L["Exe_9"]["Position"] = UDim2.new(0, 0, -0.2, 0);
+LMG2L["Exe_9"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+LMG2L["Exe_9"]["Name"] = [[Exe]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame
+LMG2L["Frame_a"] = Instance.new("Frame", LMG2L["Exe_9"]);
+LMG2L["Frame_a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Frame_a"]["Size"] = UDim2.new(0, 572, 0, 370);
+LMG2L["Frame_a"]["Position"] = UDim2.new(0.01968, 0, 0.07751, 0);
+LMG2L["Frame_a"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.ScrollingFrame
+LMG2L["ScrollingFrame_b"] = Instance.new("ScrollingFrame", LMG2L["Exe_9"]);
+LMG2L["ScrollingFrame_b"]["Active"] = true;
+LMG2L["ScrollingFrame_b"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["ScrollingFrame_b"]["Size"] = UDim2.new(0, 556, 0, 77);
+LMG2L["ScrollingFrame_b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ScrollingFrame_b"]["Position"] = UDim2.new(0.04651, 0, 0.73255, 0);
+LMG2L["ScrollingFrame_b"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["ScrollingFrame_b"]["ScrollBarThickness"] = 0;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.ScrollingFrame.TextLabel
+LMG2L["TextLabel_c"] = Instance.new("TextLabel", LMG2L["ScrollingFrame_b"]);
+LMG2L["TextLabel_c"]["TextWrapped"] = true;
+LMG2L["TextLabel_c"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_c"]["TextSize"] = 14;
+LMG2L["TextLabel_c"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_c"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextLabel_c"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["TextLabel_c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_c"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_c"]["Size"] = UDim2.new(0, 556, 0, 760);
+LMG2L["TextLabel_c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_c"]["Text"] = [[LOG]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.ScrollingFrame.TextLabel.LOG
+LMG2L["LOG_d"] = Instance.new("LocalScript", LMG2L["TextLabel_c"]);
+LMG2L["LOG_d"]["Name"] = [[LOG]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE
+LMG2L["EXE_e"] = Instance.new("TextButton", LMG2L["Exe_9"]);
+LMG2L["EXE_e"]["TextSize"] = 14;
+LMG2L["EXE_e"]["TextColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["EXE_e"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["EXE_e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["EXE_e"]["Size"] = UDim2.new(0, 100, 0, 22);
+LMG2L["EXE_e"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["EXE_e"]["Text"] = [[EXECUTE]];
+LMG2L["EXE_e"]["Name"] = [[EXE]];
+LMG2L["EXE_e"]["Position"] = UDim2.new(0.04651, 0, 0.65203, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.RemoteEvent
+LMG2L["RemoteEvent_f"] = Instance.new("RemoteEvent", LMG2L["EXE_e"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.LocalScript
+LMG2L["LocalScript_10"] = Instance.new("LocalScript", LMG2L["EXE_e"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.Script
+LMG2L["Script_11"] = Instance.new("Script", LMG2L["EXE_e"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.Script.Loadstring
+LMG2L["Loadstring_12"] = Instance.new("ModuleScript", LMG2L["Script_11"]);
+LMG2L["Loadstring_12"]["Name"] = [[Loadstring]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.Script.Loadstring.FiOne
+LMG2L["FiOne_13"] = Instance.new("ModuleScript", LMG2L["Loadstring_12"]);
+LMG2L["FiOne_13"]["Name"] = [[FiOne]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.Script.Loadstring.Yueliang
+LMG2L["Yueliang_14"] = Instance.new("ModuleScript", LMG2L["Loadstring_12"]);
+LMG2L["Yueliang_14"]["Name"] = [[Yueliang]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.Script
+LMG2L["Script_15"] = Instance.new("Script", LMG2L["EXE_e"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.Stroke
+LMG2L["Stroke_16"] = Instance.new("UIStroke", LMG2L["EXE_e"]);
+LMG2L["Stroke_16"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["Stroke_16"]["Name"] = [[Stroke]];
+LMG2L["Stroke_16"]["Color"] = Color3.fromRGB(191, 191, 191);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Field
+LMG2L["Field_17"] = Instance.new("TextBox", LMG2L["Exe_9"]);
+LMG2L["Field_17"]["Name"] = [[Field]];
+LMG2L["Field_17"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["Field_17"]["TextWrapped"] = true;
+LMG2L["Field_17"]["TextSize"] = 14;
+LMG2L["Field_17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Field_17"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["Field_17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Field_17"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["Field_17"]["ClearTextOnFocus"] = false;
+LMG2L["Field_17"]["Size"] = UDim2.new(0, 449, 0, 213);
+LMG2L["Field_17"]["Position"] = UDim2.new(0.04651, 0, 0.10417, 0);
+LMG2L["Field_17"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["Field_17"]["Text"] = [[]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton
+LMG2L["TextButton_18"] = Instance.new("TextButton", LMG2L["Exe_9"]);
+LMG2L["TextButton_18"]["TextSize"] = 14;
+LMG2L["TextButton_18"]["TextColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton_18"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["TextButton_18"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_18"]["Size"] = UDim2.new(0, 96, 0, 22);
+LMG2L["TextButton_18"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["TextButton_18"]["Text"] = [[CLEAR]];
+LMG2L["TextButton_18"]["Position"] = UDim2.new(0.22977, 0, 0.65203, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+LMG2L["LocalScript_19"] = Instance.new("LocalScript", LMG2L["TextButton_18"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Stroke
+LMG2L["Stroke_1a"] = Instance.new("UIStroke", LMG2L["TextButton_18"]);
+LMG2L["Stroke_1a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["Stroke_1a"]["Name"] = [[Stroke]];
+LMG2L["Stroke_1a"]["Color"] = Color3.fromRGB(191, 191, 191);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Script
+LMG2L["Script_1b"] = Instance.new("Script", LMG2L["TextButton_18"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton
+LMG2L["TextButton_1c"] = Instance.new("TextButton", LMG2L["Exe_9"]);
+LMG2L["TextButton_1c"]["TextSize"] = 14;
+LMG2L["TextButton_1c"]["TextColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton_1c"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["TextButton_1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_1c"]["Size"] = UDim2.new(0, 96, 0, 22);
+LMG2L["TextButton_1c"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["TextButton_1c"]["Text"] = [[INJECT]];
+LMG2L["TextButton_1c"]["Position"] = UDim2.new(0.40427, 0, 0.65203, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+LMG2L["LocalScript_1d"] = Instance.new("LocalScript", LMG2L["TextButton_1c"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+LMG2L["LocalScript_1e"] = Instance.new("LocalScript", LMG2L["TextButton_1c"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Click
+LMG2L["Click_1f"] = Instance.new("UIGradient", LMG2L["TextButton_1c"]);
+LMG2L["Click_1f"]["Enabled"] = false;
+LMG2L["Click_1f"]["Rotation"] = 90;
+LMG2L["Click_1f"]["Name"] = [[Click]];
+LMG2L["Click_1f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(173, 231, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(173, 231, 255))};
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Normal
+LMG2L["Normal_20"] = Instance.new("UIGradient", LMG2L["TextButton_1c"]);
+LMG2L["Normal_20"]["Rotation"] = 90;
+LMG2L["Normal_20"]["Name"] = [[Normal]];
+LMG2L["Normal_20"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(0.452, Color3.fromRGB(254, 254, 254)),ColorSequenceKeypoint.new(0.531, Color3.fromRGB(255, 255, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 255, 255))};
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Script
+LMG2L["Script_21"] = Instance.new("Script", LMG2L["TextButton_1c"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Stroke
+LMG2L["Stroke_22"] = Instance.new("UIStroke", LMG2L["TextButton_1c"]);
+LMG2L["Stroke_22"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["Stroke_22"]["Name"] = [[Stroke]];
+LMG2L["Stroke_22"]["Color"] = Color3.fromRGB(191, 191, 191);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton
+LMG2L["TextButton_23"] = Instance.new("TextButton", LMG2L["Exe_9"]);
+LMG2L["TextButton_23"]["TextSize"] = 12;
+LMG2L["TextButton_23"]["TextColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton_23"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["TextButton_23"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_23"]["Size"] = UDim2.new(0, 59, 0, 22);
+LMG2L["TextButton_23"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["TextButton_23"]["Text"] = [[HIDE TEXT]];
+LMG2L["TextButton_23"]["Position"] = UDim2.new(0.5787, 0, 0.65203, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+LMG2L["LocalScript_24"] = Instance.new("LocalScript", LMG2L["TextButton_23"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Stroke
+LMG2L["Stroke_25"] = Instance.new("UIStroke", LMG2L["TextButton_23"]);
+LMG2L["Stroke_25"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["Stroke_25"]["Name"] = [[Stroke]];
+LMG2L["Stroke_25"]["Color"] = Color3.fromRGB(191, 191, 191);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Script
+LMG2L["Script_26"] = Instance.new("Script", LMG2L["TextButton_23"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton
+LMG2L["TextButton_27"] = Instance.new("TextButton", LMG2L["Exe_9"]);
+LMG2L["TextButton_27"]["TextSize"] = 14;
+LMG2L["TextButton_27"]["TextColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton_27"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["TextButton_27"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_27"]["Size"] = UDim2.new(0, 25, 0, 22);
+LMG2L["TextButton_27"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["TextButton_27"]["Text"] = [[R6]];
+LMG2L["TextButton_27"]["Position"] = UDim2.new(0.75356, 0, 0.65203, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6
+LMG2L["R6_28"] = Instance.new("ModuleScript", LMG2L["TextButton_27"]);
+LMG2L["R6_28"]["Name"] = [[R6]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter
+LMG2L["DefaultCharacter_29"] = Instance.new("Model", LMG2L["R6_28"]);
+LMG2L["DefaultCharacter_29"]["WorldPivot"] = CFrame.new(Vector3.new(-3, 4.5, 21), Vector3.new(1, -0, -0));
+LMG2L["DefaultCharacter_29"]["Name"] = [[DefaultCharacter]];
+-- LMG2L["DefaultCharacter_29"]["PrimaryPart"] = ;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate
+LMG2L["Animate_2a"] = Instance.new("LocalScript", LMG2L["DefaultCharacter_29"]);
+LMG2L["Animate_2a"]["Name"] = [[Animate]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.ScaleDampeningPercent
+LMG2L["ScaleDampeningPercent_2b"] = Instance.new("NumberValue", LMG2L["Animate_2a"]);
+LMG2L["ScaleDampeningPercent_2b"]["Name"] = [[ScaleDampeningPercent]];
+LMG2L["ScaleDampeningPercent_2b"]["Value"] = 0.4;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.sit
+LMG2L["sit_2c"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["sit_2c"]["Name"] = [[sit]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.sit.SitAnim
+LMG2L["SitAnim_2d"] = Instance.new("Animation", LMG2L["sit_2c"]);
+LMG2L["SitAnim_2d"]["Name"] = [[SitAnim]];
+LMG2L["SitAnim_2d"]["AnimationId"] = [[http://www.roblox.com/asset/?id=178130996]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.fall
+LMG2L["fall_2e"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["fall_2e"]["Name"] = [[fall]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.fall.FallAnim
+LMG2L["FallAnim_2f"] = Instance.new("Animation", LMG2L["fall_2e"]);
+LMG2L["FallAnim_2f"]["Name"] = [[FallAnim]];
+LMG2L["FallAnim_2f"]["AnimationId"] = [[http://www.roblox.com/asset/?id=180436148]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.toolnone
+LMG2L["toolnone_30"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["toolnone_30"]["Name"] = [[toolnone]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.toolnone.ToolNoneAnim
+LMG2L["ToolNoneAnim_31"] = Instance.new("Animation", LMG2L["toolnone_30"]);
+LMG2L["ToolNoneAnim_31"]["Name"] = [[ToolNoneAnim]];
+LMG2L["ToolNoneAnim_31"]["AnimationId"] = [[http://www.roblox.com/asset/?id=182393478]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.climb
+LMG2L["climb_32"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["climb_32"]["Name"] = [[climb]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.climb.ClimbAnim
+LMG2L["ClimbAnim_33"] = Instance.new("Animation", LMG2L["climb_32"]);
+LMG2L["ClimbAnim_33"]["Name"] = [[ClimbAnim]];
+LMG2L["ClimbAnim_33"]["AnimationId"] = [[http://www.roblox.com/asset/?id=180436334]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.jump
+LMG2L["jump_34"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["jump_34"]["Name"] = [[jump]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.jump.JumpAnim
+LMG2L["JumpAnim_35"] = Instance.new("Animation", LMG2L["jump_34"]);
+LMG2L["JumpAnim_35"]["Name"] = [[JumpAnim]];
+LMG2L["JumpAnim_35"]["AnimationId"] = [[http://www.roblox.com/asset/?id=125750702]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.run
+LMG2L["run_36"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["run_36"]["Name"] = [[run]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.run.RunAnim
+LMG2L["RunAnim_37"] = Instance.new("Animation", LMG2L["run_36"]);
+LMG2L["RunAnim_37"]["Name"] = [[RunAnim]];
+LMG2L["RunAnim_37"]["AnimationId"] = [[http://www.roblox.com/asset/?id=180426354]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.walk
+LMG2L["walk_38"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["walk_38"]["Name"] = [[walk]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.walk.WalkAnim
+LMG2L["WalkAnim_39"] = Instance.new("Animation", LMG2L["walk_38"]);
+LMG2L["WalkAnim_39"]["Name"] = [[WalkAnim]];
+LMG2L["WalkAnim_39"]["AnimationId"] = [[http://www.roblox.com/asset/?id=180426354]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.idle
+LMG2L["idle_3a"] = Instance.new("StringValue", LMG2L["Animate_2a"]);
+LMG2L["idle_3a"]["Name"] = [[idle]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.idle.Animation2
+LMG2L["Animation2_3b"] = Instance.new("Animation", LMG2L["idle_3a"]);
+LMG2L["Animation2_3b"]["Name"] = [[Animation2]];
+LMG2L["Animation2_3b"]["AnimationId"] = [[http://www.roblox.com/asset/?id=180435792]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.idle.Animation2.Weight
+LMG2L["Weight_3c"] = Instance.new("NumberValue", LMG2L["Animation2_3b"]);
+LMG2L["Weight_3c"]["Name"] = [[Weight]];
+LMG2L["Weight_3c"]["Value"] = 1;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.idle.Animation1
+LMG2L["Animation1_3d"] = Instance.new("Animation", LMG2L["idle_3a"]);
+LMG2L["Animation1_3d"]["Name"] = [[Animation1]];
+LMG2L["Animation1_3d"]["AnimationId"] = [[http://www.roblox.com/asset/?id=180435571]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate.idle.Animation1.Weight
+LMG2L["Weight_3e"] = Instance.new("NumberValue", LMG2L["Animation1_3d"]);
+LMG2L["Weight_3e"]["Name"] = [[Weight]];
+LMG2L["Weight_3e"]["Value"] = 9;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Health
+LMG2L["Health_3f"] = Instance.new("Script", LMG2L["DefaultCharacter_29"]);
+LMG2L["Health_3f"]["Name"] = [[Health]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Sound
+LMG2L["Sound_40"] = Instance.new("Script", LMG2L["DefaultCharacter_29"]);
+LMG2L["Sound_40"]["Name"] = [[Sound]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Sound.LocalSound
+LMG2L["LocalSound_41"] = Instance.new("LocalScript", LMG2L["Sound_40"]);
+LMG2L["LocalSound_41"]["Name"] = [[LocalSound]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.HumanoidRootPart
+LMG2L["HumanoidRootPart_42"] = Instance.new("Part", LMG2L["DefaultCharacter_29"]);
+LMG2L["HumanoidRootPart_42"]["BottomSurface"] = Enum.SurfaceType.Smooth;
+LMG2L["HumanoidRootPart_42"]["CanCollide"] = false;
+LMG2L["HumanoidRootPart_42"]["Transparency"] = 1;
+LMG2L["HumanoidRootPart_42"]["TopSurface"] = Enum.SurfaceType.Smooth;
+LMG2L["HumanoidRootPart_42"]["CFrame"] = CFrame.new(Vector3.new(-3, 3, 21), Vector3.new(1, -0, -0));
+LMG2L["HumanoidRootPart_42"]["Locked"] = true;
+LMG2L["HumanoidRootPart_42"]["Size"] = Vector3.new(2, 2, 1);
+-- LMG2L["HumanoidRootPart_42"]["BrickColor"] = ;
+LMG2L["HumanoidRootPart_42"]["Color"] = Color3.fromRGB(174, 174, 174);
+LMG2L["HumanoidRootPart_42"]["Rotation"] = Vector3.new(0, -90, 0);
+LMG2L["HumanoidRootPart_42"]["Name"] = [[HumanoidRootPart]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.HumanoidRootPart.RootJoint
+LMG2L["RootJoint_43"] = Instance.new("Motor6D", LMG2L["HumanoidRootPart_42"]);
+-- LMG2L["RootJoint_43"]["Part1"] = ;
+LMG2L["RootJoint_43"]["MaxVelocity"] = 0.1;
+LMG2L["RootJoint_43"]["C1"] = CFrame.new(Vector3.new(0, 0, 0), Vector3.new(-0, -1, 0));
+LMG2L["RootJoint_43"]["C0"] = CFrame.new(Vector3.new(0, 0, 0), Vector3.new(-0, -1, 0));
+LMG2L["RootJoint_43"]["Name"] = [[RootJoint]];
+-- LMG2L["RootJoint_43"]["Part0"] = ;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.HumanoidRootPart.RootAttachment
+LMG2L["RootAttachment_44"] = Instance.new("Attachment", LMG2L["HumanoidRootPart_42"]);
+LMG2L["RootAttachment_44"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 3, 21), Vector3.new(1, -0, -0));
+LMG2L["RootAttachment_44"]["Name"] = [[RootAttachment]];
+LMG2L["RootAttachment_44"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.HumanoidRootPart.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_45"] = Instance.new("RemoteEvent", LMG2L["HumanoidRootPart_42"]);
+LMG2L["CharacterSoundEvent_45"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Humanoid
+LMG2L["Humanoid_46"] = Instance.new("Humanoid", LMG2L["DefaultCharacter_29"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Humanoid.Jump
+LMG2L["Jump_47"] = Instance.new("LocalScript", LMG2L["Humanoid_46"]);
+LMG2L["Jump_47"]["Name"] = [[Jump]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Humanoid.Respawn
+LMG2L["Respawn_48"] = Instance.new("Script", LMG2L["Humanoid_46"]);
+LMG2L["Respawn_48"]["Name"] = [[Respawn]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Humanoid.Animator
+LMG2L["Animator_49"] = Instance.new("Animator", LMG2L["Humanoid_46"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Right Leg
+LMG2L["Right Leg_4a"] = Instance.new("Part", LMG2L["DefaultCharacter_29"]);
+LMG2L["Right Leg_4a"]["BottomSurface"] = Enum.SurfaceType.Smooth;
+LMG2L["Right Leg_4a"]["CanCollide"] = false;
+LMG2L["Right Leg_4a"]["CFrame"] = CFrame.new(Vector3.new(-3, 1, 21.5), Vector3.new(1, -0, -0));
+LMG2L["Right Leg_4a"]["Locked"] = true;
+LMG2L["Right Leg_4a"]["Size"] = Vector3.new(1, 2, 1);
+-- LMG2L["Right Leg_4a"]["BrickColor"] = ;
+LMG2L["Right Leg_4a"]["Color"] = Color3.fromRGB(174, 174, 174);
+LMG2L["Right Leg_4a"]["Rotation"] = Vector3.new(0, -90, 0);
+LMG2L["Right Leg_4a"]["Name"] = [[Right Leg]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Right Leg.RightFootAttachment
+LMG2L["RightFootAttachment_4b"] = Instance.new("Attachment", LMG2L["Right Leg_4a"]);
+LMG2L["RightFootAttachment_4b"]["CFrame"] = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1));
+LMG2L["RightFootAttachment_4b"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 0, 21.5), Vector3.new(1, -0, -0));
+LMG2L["RightFootAttachment_4b"]["Name"] = [[RightFootAttachment]];
+LMG2L["RightFootAttachment_4b"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Right Leg.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_4c"] = Instance.new("RemoteEvent", LMG2L["Right Leg_4a"]);
+LMG2L["CharacterSoundEvent_4c"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Left Leg
+LMG2L["Left Leg_4d"] = Instance.new("Part", LMG2L["DefaultCharacter_29"]);
+LMG2L["Left Leg_4d"]["BottomSurface"] = Enum.SurfaceType.Smooth;
+LMG2L["Left Leg_4d"]["CanCollide"] = false;
+LMG2L["Left Leg_4d"]["CFrame"] = CFrame.new(Vector3.new(-3, 1, 20.5), Vector3.new(1, -0, -0));
+LMG2L["Left Leg_4d"]["Locked"] = true;
+LMG2L["Left Leg_4d"]["Size"] = Vector3.new(1, 2, 1);
+-- LMG2L["Left Leg_4d"]["BrickColor"] = ;
+LMG2L["Left Leg_4d"]["Color"] = Color3.fromRGB(174, 174, 174);
+LMG2L["Left Leg_4d"]["Rotation"] = Vector3.new(0, -90, 0);
+LMG2L["Left Leg_4d"]["Name"] = [[Left Leg]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Left Leg.LeftFootAttachment
+LMG2L["LeftFootAttachment_4e"] = Instance.new("Attachment", LMG2L["Left Leg_4d"]);
+LMG2L["LeftFootAttachment_4e"]["CFrame"] = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1));
+LMG2L["LeftFootAttachment_4e"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 0, 20.5), Vector3.new(1, -0, -0));
+LMG2L["LeftFootAttachment_4e"]["Name"] = [[LeftFootAttachment]];
+LMG2L["LeftFootAttachment_4e"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Left Leg.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_4f"] = Instance.new("RemoteEvent", LMG2L["Left Leg_4d"]);
+LMG2L["CharacterSoundEvent_4f"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Right Arm
+LMG2L["Right Arm_50"] = Instance.new("Part", LMG2L["DefaultCharacter_29"]);
+LMG2L["Right Arm_50"]["CanCollide"] = false;
+LMG2L["Right Arm_50"]["CFrame"] = CFrame.new(Vector3.new(-3, 3, 22.5), Vector3.new(1, -0, -0));
+LMG2L["Right Arm_50"]["Locked"] = true;
+LMG2L["Right Arm_50"]["Size"] = Vector3.new(1, 2, 1);
+-- LMG2L["Right Arm_50"]["BrickColor"] = ;
+LMG2L["Right Arm_50"]["Color"] = Color3.fromRGB(174, 174, 174);
+LMG2L["Right Arm_50"]["Rotation"] = Vector3.new(0, -90, 0);
+LMG2L["Right Arm_50"]["Name"] = [[Right Arm]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Right Arm.RightGripAttachment
+LMG2L["RightGripAttachment_51"] = Instance.new("Attachment", LMG2L["Right Arm_50"]);
+LMG2L["RightGripAttachment_51"]["CFrame"] = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1));
+LMG2L["RightGripAttachment_51"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 2, 22.5), Vector3.new(1, -0, -0));
+LMG2L["RightGripAttachment_51"]["Name"] = [[RightGripAttachment]];
+LMG2L["RightGripAttachment_51"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Right Arm.RightShoulderAttachment
+LMG2L["RightShoulderAttachment_52"] = Instance.new("Attachment", LMG2L["Right Arm_50"]);
+LMG2L["RightShoulderAttachment_52"]["CFrame"] = CFrame.new(Vector3.new(0, 1, 0), Vector3.new(-0, -0, -1));
+LMG2L["RightShoulderAttachment_52"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 4, 22.5), Vector3.new(1, -0, -0));
+LMG2L["RightShoulderAttachment_52"]["Name"] = [[RightShoulderAttachment]];
+LMG2L["RightShoulderAttachment_52"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Right Arm.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_53"] = Instance.new("RemoteEvent", LMG2L["Right Arm_50"]);
+LMG2L["CharacterSoundEvent_53"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Left Arm
+LMG2L["Left Arm_54"] = Instance.new("Part", LMG2L["DefaultCharacter_29"]);
+LMG2L["Left Arm_54"]["CanCollide"] = false;
+LMG2L["Left Arm_54"]["CFrame"] = CFrame.new(Vector3.new(-3, 3, 19.5), Vector3.new(1, -0, -0));
+LMG2L["Left Arm_54"]["Locked"] = true;
+LMG2L["Left Arm_54"]["Size"] = Vector3.new(1, 2, 1);
+-- LMG2L["Left Arm_54"]["BrickColor"] = ;
+LMG2L["Left Arm_54"]["Color"] = Color3.fromRGB(174, 174, 174);
+LMG2L["Left Arm_54"]["Rotation"] = Vector3.new(0, -90, 0);
+LMG2L["Left Arm_54"]["Name"] = [[Left Arm]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Left Arm.LeftGripAttachment
+LMG2L["LeftGripAttachment_55"] = Instance.new("Attachment", LMG2L["Left Arm_54"]);
+LMG2L["LeftGripAttachment_55"]["CFrame"] = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1));
+LMG2L["LeftGripAttachment_55"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 2, 19.5), Vector3.new(1, -0, -0));
+LMG2L["LeftGripAttachment_55"]["Name"] = [[LeftGripAttachment]];
+LMG2L["LeftGripAttachment_55"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Left Arm.LeftShoulderAttachment
+LMG2L["LeftShoulderAttachment_56"] = Instance.new("Attachment", LMG2L["Left Arm_54"]);
+LMG2L["LeftShoulderAttachment_56"]["CFrame"] = CFrame.new(Vector3.new(0, 1, 0), Vector3.new(-0, -0, -1));
+LMG2L["LeftShoulderAttachment_56"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 4, 19.5), Vector3.new(1, -0, -0));
+LMG2L["LeftShoulderAttachment_56"]["Name"] = [[LeftShoulderAttachment]];
+LMG2L["LeftShoulderAttachment_56"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Left Arm.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_57"] = Instance.new("RemoteEvent", LMG2L["Left Arm_54"]);
+LMG2L["CharacterSoundEvent_57"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso
+LMG2L["Torso_58"] = Instance.new("Part", LMG2L["DefaultCharacter_29"]);
+LMG2L["Torso_58"]["RightSurface"] = Enum.SurfaceType.Weld;
+LMG2L["Torso_58"]["CFrame"] = CFrame.new(Vector3.new(-3, 3, 21), Vector3.new(1, -0, -0));
+LMG2L["Torso_58"]["Locked"] = true;
+LMG2L["Torso_58"]["Size"] = Vector3.new(2, 2, 1);
+LMG2L["Torso_58"]["LeftSurface"] = Enum.SurfaceType.Weld;
+-- LMG2L["Torso_58"]["BrickColor"] = ;
+LMG2L["Torso_58"]["Color"] = Color3.fromRGB(174, 174, 174);
+LMG2L["Torso_58"]["Rotation"] = Vector3.new(0, -90, 0);
+LMG2L["Torso_58"]["Name"] = [[Torso]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.Neck
+LMG2L["Neck_59"] = Instance.new("Motor6D", LMG2L["Torso_58"]);
+-- LMG2L["Neck_59"]["Part1"] = ;
+LMG2L["Neck_59"]["MaxVelocity"] = 0.1;
+LMG2L["Neck_59"]["C1"] = CFrame.new(Vector3.new(0, -0.5, 0), Vector3.new(-0, -1, 0));
+LMG2L["Neck_59"]["C0"] = CFrame.new(Vector3.new(0, 1, 0), Vector3.new(-0, -1, 0));
+LMG2L["Neck_59"]["Name"] = [[Neck]];
+-- LMG2L["Neck_59"]["Part0"] = ;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.Left Hip
+LMG2L["Left Hip_5a"] = Instance.new("Motor6D", LMG2L["Torso_58"]);
+-- LMG2L["Left Hip_5a"]["Part1"] = ;
+LMG2L["Left Hip_5a"]["MaxVelocity"] = 0.1;
+LMG2L["Left Hip_5a"]["C1"] = CFrame.new(Vector3.new(-0.5, 1, 0), Vector3.new(1, -0, -0));
+LMG2L["Left Hip_5a"]["C0"] = CFrame.new(Vector3.new(-1, -1, 0), Vector3.new(1, -0, -0));
+LMG2L["Left Hip_5a"]["Name"] = [[Left Hip]];
+-- LMG2L["Left Hip_5a"]["Part0"] = ;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.Right Hip
+LMG2L["Right Hip_5b"] = Instance.new("Motor6D", LMG2L["Torso_58"]);
+-- LMG2L["Right Hip_5b"]["Part1"] = ;
+LMG2L["Right Hip_5b"]["MaxVelocity"] = 0.1;
+LMG2L["Right Hip_5b"]["C1"] = CFrame.new(Vector3.new(0.5, 1, 0), Vector3.new(-1, 0, -0));
+LMG2L["Right Hip_5b"]["C0"] = CFrame.new(Vector3.new(1, -1, 0), Vector3.new(-1, 0, -0));
+LMG2L["Right Hip_5b"]["Name"] = [[Right Hip]];
+-- LMG2L["Right Hip_5b"]["Part0"] = ;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.Left Shoulder
+LMG2L["Left Shoulder_5c"] = Instance.new("Motor6D", LMG2L["Torso_58"]);
+-- LMG2L["Left Shoulder_5c"]["Part1"] = ;
+LMG2L["Left Shoulder_5c"]["MaxVelocity"] = 0.1;
+LMG2L["Left Shoulder_5c"]["C1"] = CFrame.new(Vector3.new(0.5, 0.5, 0), Vector3.new(1, -0, -0));
+LMG2L["Left Shoulder_5c"]["C0"] = CFrame.new(Vector3.new(-1, 0.5, 0), Vector3.new(1, -0, -0));
+LMG2L["Left Shoulder_5c"]["Name"] = [[Left Shoulder]];
+-- LMG2L["Left Shoulder_5c"]["Part0"] = ;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.Right Shoulder
+LMG2L["Right Shoulder_5d"] = Instance.new("Motor6D", LMG2L["Torso_58"]);
+-- LMG2L["Right Shoulder_5d"]["Part1"] = ;
+LMG2L["Right Shoulder_5d"]["MaxVelocity"] = 0.1;
+LMG2L["Right Shoulder_5d"]["C1"] = CFrame.new(Vector3.new(-0.5, 0.5, 0), Vector3.new(-1, 0, -0));
+LMG2L["Right Shoulder_5d"]["C0"] = CFrame.new(Vector3.new(1, 0.5, 0), Vector3.new(-1, 0, -0));
+LMG2L["Right Shoulder_5d"]["Name"] = [[Right Shoulder]];
+-- LMG2L["Right Shoulder_5d"]["Part0"] = ;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.WaistBackAttachment
+LMG2L["WaistBackAttachment_5e"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["WaistBackAttachment_5e"]["CFrame"] = CFrame.new(Vector3.new(0, -1, 0.5), Vector3.new(-0, -0, -1));
+LMG2L["WaistBackAttachment_5e"]["WorldCFrame"] = CFrame.new(Vector3.new(-3.5, 2, 21), Vector3.new(1, -0, -0));
+LMG2L["WaistBackAttachment_5e"]["Name"] = [[WaistBackAttachment]];
+LMG2L["WaistBackAttachment_5e"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.WaistCenterAttachment
+LMG2L["WaistCenterAttachment_5f"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["WaistCenterAttachment_5f"]["CFrame"] = CFrame.new(Vector3.new(0, -1, 0), Vector3.new(-0, -0, -1));
+LMG2L["WaistCenterAttachment_5f"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 2, 21), Vector3.new(1, -0, -0));
+LMG2L["WaistCenterAttachment_5f"]["Name"] = [[WaistCenterAttachment]];
+LMG2L["WaistCenterAttachment_5f"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.WaistFrontAttachment
+LMG2L["WaistFrontAttachment_60"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["WaistFrontAttachment_60"]["CFrame"] = CFrame.new(Vector3.new(0, -1, -0.5), Vector3.new(-0, -0, -1));
+LMG2L["WaistFrontAttachment_60"]["WorldCFrame"] = CFrame.new(Vector3.new(-2.5, 2, 21), Vector3.new(1, -0, -0));
+LMG2L["WaistFrontAttachment_60"]["Name"] = [[WaistFrontAttachment]];
+LMG2L["WaistFrontAttachment_60"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.RightCollarAttachment
+LMG2L["RightCollarAttachment_61"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["RightCollarAttachment_61"]["CFrame"] = CFrame.new(Vector3.new(1, 1, 0), Vector3.new(-0, -0, -1));
+LMG2L["RightCollarAttachment_61"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 4, 22), Vector3.new(1, -0, -0));
+LMG2L["RightCollarAttachment_61"]["Name"] = [[RightCollarAttachment]];
+LMG2L["RightCollarAttachment_61"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.LeftCollarAttachment
+LMG2L["LeftCollarAttachment_62"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["LeftCollarAttachment_62"]["CFrame"] = CFrame.new(Vector3.new(-1, 1, 0), Vector3.new(-0, -0, -1));
+LMG2L["LeftCollarAttachment_62"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 4, 20), Vector3.new(1, -0, -0));
+LMG2L["LeftCollarAttachment_62"]["Name"] = [[LeftCollarAttachment]];
+LMG2L["LeftCollarAttachment_62"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.BodyBackAttachment
+LMG2L["BodyBackAttachment_63"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["BodyBackAttachment_63"]["CFrame"] = CFrame.new(Vector3.new(0, 0, 0.5), Vector3.new(-0, -0, -1));
+LMG2L["BodyBackAttachment_63"]["WorldCFrame"] = CFrame.new(Vector3.new(-3.5, 3, 21), Vector3.new(1, -0, -0));
+LMG2L["BodyBackAttachment_63"]["Name"] = [[BodyBackAttachment]];
+LMG2L["BodyBackAttachment_63"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.BodyFrontAttachment
+LMG2L["BodyFrontAttachment_64"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["BodyFrontAttachment_64"]["CFrame"] = CFrame.new(Vector3.new(0, 0, -0.5), Vector3.new(-0, -0, -1));
+LMG2L["BodyFrontAttachment_64"]["WorldCFrame"] = CFrame.new(Vector3.new(-2.5, 3, 21), Vector3.new(1, -0, -0));
+LMG2L["BodyFrontAttachment_64"]["Name"] = [[BodyFrontAttachment]];
+LMG2L["BodyFrontAttachment_64"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.NeckAttachment
+LMG2L["NeckAttachment_65"] = Instance.new("Attachment", LMG2L["Torso_58"]);
+LMG2L["NeckAttachment_65"]["CFrame"] = CFrame.new(Vector3.new(0, 1, 0), Vector3.new(-0, -0, -1));
+LMG2L["NeckAttachment_65"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 4, 21), Vector3.new(1, -0, -0));
+LMG2L["NeckAttachment_65"]["Name"] = [[NeckAttachment]];
+LMG2L["NeckAttachment_65"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.roblox
+LMG2L["roblox_66"] = Instance.new("Decal", LMG2L["Torso_58"]);
+LMG2L["roblox_66"]["Name"] = [[roblox]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Torso.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_67"] = Instance.new("RemoteEvent", LMG2L["Torso_58"]);
+LMG2L["CharacterSoundEvent_67"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head
+LMG2L["Head_68"] = Instance.new("Part", LMG2L["DefaultCharacter_29"]);
+LMG2L["Head_68"]["TopSurface"] = Enum.SurfaceType.Smooth;
+LMG2L["Head_68"]["CFrame"] = CFrame.new(Vector3.new(-3, 4.5, 21), Vector3.new(1, -0, -0));
+LMG2L["Head_68"]["Locked"] = true;
+LMG2L["Head_68"]["Size"] = Vector3.new(2, 1, 1);
+-- LMG2L["Head_68"]["BrickColor"] = ;
+LMG2L["Head_68"]["Color"] = Color3.fromRGB(174, 174, 174);
+LMG2L["Head_68"]["Rotation"] = Vector3.new(0, -90, 0);
+LMG2L["Head_68"]["Name"] = [[Head]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.face
+LMG2L["face_69"] = Instance.new("Decal", LMG2L["Head_68"]);
+-- LMG2L["face_69"]["TextureContent"] = ;
+LMG2L["face_69"]["Name"] = [[face]];
+LMG2L["face_69"]["Texture"] = [[rbxassetid://144080495]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Climbing
+LMG2L["Climbing_6a"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Climbing_6a"]["RollOffMaxDistance"] = 150;
+LMG2L["Climbing_6a"]["Volume"] = 0.65;
+LMG2L["Climbing_6a"]["Looped"] = true;
+LMG2L["Climbing_6a"]["Name"] = [[Climbing]];
+LMG2L["Climbing_6a"]["RollOffMinDistance"] = 5;
+LMG2L["Climbing_6a"]["SoundId"] = [[rbxasset://sounds/action_footsteps_plastic.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_6b"] = Instance.new("RemoteEvent", LMG2L["Climbing_6a"]);
+LMG2L["CharacterSoundEvent_6b"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Swimming
+LMG2L["Swimming_6c"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Swimming_6c"]["PlaybackSpeed"] = 1.6;
+LMG2L["Swimming_6c"]["RollOffMaxDistance"] = 150;
+LMG2L["Swimming_6c"]["Volume"] = 0.65;
+LMG2L["Swimming_6c"]["Looped"] = true;
+LMG2L["Swimming_6c"]["Name"] = [[Swimming]];
+LMG2L["Swimming_6c"]["RollOffMinDistance"] = 5;
+LMG2L["Swimming_6c"]["SoundId"] = [[rbxasset://sounds/action_swim.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_6d"] = Instance.new("RemoteEvent", LMG2L["Swimming_6c"]);
+LMG2L["CharacterSoundEvent_6d"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Running
+LMG2L["Running_6e"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Running_6e"]["TimePosition"] = 0.83446;
+LMG2L["Running_6e"]["PlaybackSpeed"] = 1.85;
+LMG2L["Running_6e"]["RollOffMaxDistance"] = 150;
+LMG2L["Running_6e"]["Volume"] = 0.65;
+LMG2L["Running_6e"]["Looped"] = true;
+LMG2L["Running_6e"]["Name"] = [[Running]];
+LMG2L["Running_6e"]["RollOffMinDistance"] = 5;
+LMG2L["Running_6e"]["SoundId"] = [[rbxasset://sounds/action_footsteps_plastic.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_6f"] = Instance.new("RemoteEvent", LMG2L["Running_6e"]);
+LMG2L["CharacterSoundEvent_6f"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Splash
+LMG2L["Splash_70"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Splash_70"]["RollOffMaxDistance"] = 150;
+LMG2L["Splash_70"]["Volume"] = 0.65;
+LMG2L["Splash_70"]["Name"] = [[Splash]];
+LMG2L["Splash_70"]["RollOffMinDistance"] = 5;
+LMG2L["Splash_70"]["SoundId"] = [[rbxasset://sounds/impact_water.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_71"] = Instance.new("RemoteEvent", LMG2L["Splash_70"]);
+LMG2L["CharacterSoundEvent_71"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Landing
+LMG2L["Landing_72"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Landing_72"]["RollOffMaxDistance"] = 150;
+LMG2L["Landing_72"]["Volume"] = 0.65;
+LMG2L["Landing_72"]["Name"] = [[Landing]];
+LMG2L["Landing_72"]["RollOffMinDistance"] = 5;
+LMG2L["Landing_72"]["SoundId"] = [[rbxasset://sounds/action_jump_land.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_73"] = Instance.new("RemoteEvent", LMG2L["Landing_72"]);
+LMG2L["CharacterSoundEvent_73"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Jumping
+LMG2L["Jumping_74"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Jumping_74"]["RollOffMaxDistance"] = 150;
+LMG2L["Jumping_74"]["Volume"] = 0.65;
+LMG2L["Jumping_74"]["Name"] = [[Jumping]];
+LMG2L["Jumping_74"]["RollOffMinDistance"] = 5;
+LMG2L["Jumping_74"]["SoundId"] = [[rbxasset://sounds/action_jump.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_75"] = Instance.new("RemoteEvent", LMG2L["Jumping_74"]);
+LMG2L["CharacterSoundEvent_75"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FreeFalling
+LMG2L["FreeFalling_76"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["FreeFalling_76"]["TimePosition"] = 0.11429;
+LMG2L["FreeFalling_76"]["RollOffMaxDistance"] = 150;
+LMG2L["FreeFalling_76"]["Volume"] = 0.65;
+LMG2L["FreeFalling_76"]["Looped"] = true;
+LMG2L["FreeFalling_76"]["Name"] = [[FreeFalling]];
+LMG2L["FreeFalling_76"]["RollOffMinDistance"] = 5;
+LMG2L["FreeFalling_76"]["SoundId"] = [[rbxasset://sounds/action_falling.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_77"] = Instance.new("RemoteEvent", LMG2L["FreeFalling_76"]);
+LMG2L["CharacterSoundEvent_77"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Died
+LMG2L["Died_78"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Died_78"]["RollOffMaxDistance"] = 150;
+LMG2L["Died_78"]["Volume"] = 0.65;
+LMG2L["Died_78"]["Name"] = [[Died]];
+LMG2L["Died_78"]["RollOffMinDistance"] = 5;
+LMG2L["Died_78"]["SoundId"] = [[rbxasset://sounds/uuhhh.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_79"] = Instance.new("RemoteEvent", LMG2L["Died_78"]);
+LMG2L["CharacterSoundEvent_79"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.GettingUp
+LMG2L["GettingUp_7a"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["GettingUp_7a"]["RollOffMaxDistance"] = 150;
+LMG2L["GettingUp_7a"]["Volume"] = 0.65;
+LMG2L["GettingUp_7a"]["Name"] = [[GettingUp]];
+LMG2L["GettingUp_7a"]["RollOffMinDistance"] = 5;
+LMG2L["GettingUp_7a"]["SoundId"] = [[rbxasset://sounds/action_get_up.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_7b"] = Instance.new("RemoteEvent", LMG2L["GettingUp_7a"]);
+LMG2L["CharacterSoundEvent_7b"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FaceCenterAttachment
+LMG2L["FaceCenterAttachment_7c"] = Instance.new("Attachment", LMG2L["Head_68"]);
+LMG2L["FaceCenterAttachment_7c"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 4.5, 21), Vector3.new(1, -0, -0));
+LMG2L["FaceCenterAttachment_7c"]["Name"] = [[FaceCenterAttachment]];
+LMG2L["FaceCenterAttachment_7c"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FaceFrontAttachment
+LMG2L["FaceFrontAttachment_7d"] = Instance.new("Attachment", LMG2L["Head_68"]);
+LMG2L["FaceFrontAttachment_7d"]["CFrame"] = CFrame.new(Vector3.new(0, 0, -0.6), Vector3.new(-0, -0, -1));
+LMG2L["FaceFrontAttachment_7d"]["WorldCFrame"] = CFrame.new(Vector3.new(-2.4, 4.5, 21), Vector3.new(1, -0, -0));
+LMG2L["FaceFrontAttachment_7d"]["Name"] = [[FaceFrontAttachment]];
+LMG2L["FaceFrontAttachment_7d"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.HatAttachment
+LMG2L["HatAttachment_7e"] = Instance.new("Attachment", LMG2L["Head_68"]);
+LMG2L["HatAttachment_7e"]["CFrame"] = CFrame.new(Vector3.new(0, 0.6, 0), Vector3.new(-0, -0, -1));
+LMG2L["HatAttachment_7e"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 5.1, 21), Vector3.new(1, -0, -0));
+LMG2L["HatAttachment_7e"]["Name"] = [[HatAttachment]];
+LMG2L["HatAttachment_7e"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.HairAttachment
+LMG2L["HairAttachment_7f"] = Instance.new("Attachment", LMG2L["Head_68"]);
+LMG2L["HairAttachment_7f"]["CFrame"] = CFrame.new(Vector3.new(0, 0.6, 0), Vector3.new(-0, -0, -1));
+LMG2L["HairAttachment_7f"]["WorldCFrame"] = CFrame.new(Vector3.new(-3, 5.1, 21), Vector3.new(1, -0, -0));
+LMG2L["HairAttachment_7f"]["Name"] = [[HairAttachment]];
+LMG2L["HairAttachment_7f"]["WorldAxis"] = Vector3.new(0, 0, 1);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Mesh
+LMG2L["Mesh_80"] = Instance.new("SpecialMesh", LMG2L["Head_68"]);
+LMG2L["Mesh_80"]["Scale"] = Vector3.new(1.25, 1.25, 1.25);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_81"] = Instance.new("RemoteEvent", LMG2L["Head_68"]);
+LMG2L["CharacterSoundEvent_81"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.GettingUp
+LMG2L["GettingUp_82"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["GettingUp_82"]["RollOffMaxDistance"] = 150;
+LMG2L["GettingUp_82"]["Volume"] = 0.65;
+LMG2L["GettingUp_82"]["Name"] = [[GettingUp]];
+LMG2L["GettingUp_82"]["RollOffMinDistance"] = 5;
+LMG2L["GettingUp_82"]["SoundId"] = [[rbxasset://sounds/action_get_up.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_83"] = Instance.new("RemoteEvent", LMG2L["GettingUp_82"]);
+LMG2L["CharacterSoundEvent_83"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Died
+LMG2L["Died_84"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Died_84"]["RollOffMaxDistance"] = 150;
+LMG2L["Died_84"]["Volume"] = 0.65;
+LMG2L["Died_84"]["Name"] = [[Died]];
+LMG2L["Died_84"]["RollOffMinDistance"] = 5;
+LMG2L["Died_84"]["SoundId"] = [[rbxasset://sounds/uuhhh.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_85"] = Instance.new("RemoteEvent", LMG2L["Died_84"]);
+LMG2L["CharacterSoundEvent_85"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FreeFalling
+LMG2L["FreeFalling_86"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["FreeFalling_86"]["RollOffMaxDistance"] = 150;
+LMG2L["FreeFalling_86"]["Volume"] = 0.65;
+LMG2L["FreeFalling_86"]["Looped"] = true;
+LMG2L["FreeFalling_86"]["Name"] = [[FreeFalling]];
+LMG2L["FreeFalling_86"]["RollOffMinDistance"] = 5;
+LMG2L["FreeFalling_86"]["SoundId"] = [[rbxasset://sounds/action_falling.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_87"] = Instance.new("RemoteEvent", LMG2L["FreeFalling_86"]);
+LMG2L["CharacterSoundEvent_87"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Jumping
+LMG2L["Jumping_88"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Jumping_88"]["RollOffMaxDistance"] = 150;
+LMG2L["Jumping_88"]["Volume"] = 0.65;
+LMG2L["Jumping_88"]["Name"] = [[Jumping]];
+LMG2L["Jumping_88"]["RollOffMinDistance"] = 5;
+LMG2L["Jumping_88"]["SoundId"] = [[rbxasset://sounds/action_jump.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_89"] = Instance.new("RemoteEvent", LMG2L["Jumping_88"]);
+LMG2L["CharacterSoundEvent_89"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Landing
+LMG2L["Landing_8a"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Landing_8a"]["RollOffMaxDistance"] = 150;
+LMG2L["Landing_8a"]["Volume"] = 0.65;
+LMG2L["Landing_8a"]["Name"] = [[Landing]];
+LMG2L["Landing_8a"]["RollOffMinDistance"] = 5;
+LMG2L["Landing_8a"]["SoundId"] = [[rbxasset://sounds/action_jump_land.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_8b"] = Instance.new("RemoteEvent", LMG2L["Landing_8a"]);
+LMG2L["CharacterSoundEvent_8b"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Splash
+LMG2L["Splash_8c"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Splash_8c"]["RollOffMaxDistance"] = 150;
+LMG2L["Splash_8c"]["Volume"] = 0.65;
+LMG2L["Splash_8c"]["Name"] = [[Splash]];
+LMG2L["Splash_8c"]["RollOffMinDistance"] = 5;
+LMG2L["Splash_8c"]["SoundId"] = [[rbxasset://sounds/impact_water.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_8d"] = Instance.new("RemoteEvent", LMG2L["Splash_8c"]);
+LMG2L["CharacterSoundEvent_8d"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Running
+LMG2L["Running_8e"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Running_8e"]["PlaybackSpeed"] = 1.85;
+LMG2L["Running_8e"]["RollOffMaxDistance"] = 150;
+LMG2L["Running_8e"]["Volume"] = 0.65;
+LMG2L["Running_8e"]["Looped"] = true;
+LMG2L["Running_8e"]["Name"] = [[Running]];
+LMG2L["Running_8e"]["RollOffMinDistance"] = 5;
+LMG2L["Running_8e"]["SoundId"] = [[rbxasset://sounds/action_footsteps_plastic.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_8f"] = Instance.new("RemoteEvent", LMG2L["Running_8e"]);
+LMG2L["CharacterSoundEvent_8f"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Swimming
+LMG2L["Swimming_90"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Swimming_90"]["PlaybackSpeed"] = 1.6;
+LMG2L["Swimming_90"]["RollOffMaxDistance"] = 150;
+LMG2L["Swimming_90"]["Volume"] = 0.65;
+LMG2L["Swimming_90"]["Looped"] = true;
+LMG2L["Swimming_90"]["Name"] = [[Swimming]];
+LMG2L["Swimming_90"]["RollOffMinDistance"] = 5;
+LMG2L["Swimming_90"]["SoundId"] = [[rbxasset://sounds/action_swim.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_91"] = Instance.new("RemoteEvent", LMG2L["Swimming_90"]);
+LMG2L["CharacterSoundEvent_91"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Climbing
+LMG2L["Climbing_92"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Climbing_92"]["RollOffMaxDistance"] = 150;
+LMG2L["Climbing_92"]["Volume"] = 0.65;
+LMG2L["Climbing_92"]["Looped"] = true;
+LMG2L["Climbing_92"]["Name"] = [[Climbing]];
+LMG2L["Climbing_92"]["RollOffMinDistance"] = 5;
+LMG2L["Climbing_92"]["SoundId"] = [[rbxasset://sounds/action_footsteps_plastic.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_93"] = Instance.new("RemoteEvent", LMG2L["Climbing_92"]);
+LMG2L["CharacterSoundEvent_93"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.GettingUp
+LMG2L["GettingUp_94"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["GettingUp_94"]["RollOffMaxDistance"] = 150;
+LMG2L["GettingUp_94"]["Volume"] = 0.65;
+LMG2L["GettingUp_94"]["Name"] = [[GettingUp]];
+LMG2L["GettingUp_94"]["RollOffMinDistance"] = 5;
+LMG2L["GettingUp_94"]["SoundId"] = [[rbxasset://sounds/action_get_up.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.GettingUp.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_95"] = Instance.new("RemoteEvent", LMG2L["GettingUp_94"]);
+LMG2L["CharacterSoundEvent_95"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Died
+LMG2L["Died_96"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Died_96"]["RollOffMaxDistance"] = 150;
+LMG2L["Died_96"]["Volume"] = 0.65;
+LMG2L["Died_96"]["Name"] = [[Died]];
+LMG2L["Died_96"]["RollOffMinDistance"] = 5;
+LMG2L["Died_96"]["SoundId"] = [[rbxasset://sounds/uuhhh.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Died.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_97"] = Instance.new("RemoteEvent", LMG2L["Died_96"]);
+LMG2L["CharacterSoundEvent_97"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FreeFalling
+LMG2L["FreeFalling_98"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["FreeFalling_98"]["RollOffMaxDistance"] = 150;
+LMG2L["FreeFalling_98"]["Volume"] = 0.65;
+LMG2L["FreeFalling_98"]["Looped"] = true;
+LMG2L["FreeFalling_98"]["Name"] = [[FreeFalling]];
+LMG2L["FreeFalling_98"]["RollOffMinDistance"] = 5;
+LMG2L["FreeFalling_98"]["SoundId"] = [[rbxasset://sounds/action_falling.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.FreeFalling.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_99"] = Instance.new("RemoteEvent", LMG2L["FreeFalling_98"]);
+LMG2L["CharacterSoundEvent_99"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Jumping
+LMG2L["Jumping_9a"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Jumping_9a"]["RollOffMaxDistance"] = 150;
+LMG2L["Jumping_9a"]["Volume"] = 0.65;
+LMG2L["Jumping_9a"]["Name"] = [[Jumping]];
+LMG2L["Jumping_9a"]["RollOffMinDistance"] = 5;
+LMG2L["Jumping_9a"]["SoundId"] = [[rbxasset://sounds/action_jump.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Jumping.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_9b"] = Instance.new("RemoteEvent", LMG2L["Jumping_9a"]);
+LMG2L["CharacterSoundEvent_9b"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Landing
+LMG2L["Landing_9c"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Landing_9c"]["RollOffMaxDistance"] = 150;
+LMG2L["Landing_9c"]["Volume"] = 0.65;
+LMG2L["Landing_9c"]["Name"] = [[Landing]];
+LMG2L["Landing_9c"]["RollOffMinDistance"] = 5;
+LMG2L["Landing_9c"]["SoundId"] = [[rbxasset://sounds/action_jump_land.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Landing.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_9d"] = Instance.new("RemoteEvent", LMG2L["Landing_9c"]);
+LMG2L["CharacterSoundEvent_9d"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Splash
+LMG2L["Splash_9e"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Splash_9e"]["RollOffMaxDistance"] = 150;
+LMG2L["Splash_9e"]["Volume"] = 0.65;
+LMG2L["Splash_9e"]["Name"] = [[Splash]];
+LMG2L["Splash_9e"]["RollOffMinDistance"] = 5;
+LMG2L["Splash_9e"]["SoundId"] = [[rbxasset://sounds/impact_water.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Splash.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_9f"] = Instance.new("RemoteEvent", LMG2L["Splash_9e"]);
+LMG2L["CharacterSoundEvent_9f"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Running
+LMG2L["Running_a0"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Running_a0"]["PlaybackSpeed"] = 1.85;
+LMG2L["Running_a0"]["RollOffMaxDistance"] = 150;
+LMG2L["Running_a0"]["Volume"] = 0.65;
+LMG2L["Running_a0"]["Looped"] = true;
+LMG2L["Running_a0"]["Name"] = [[Running]];
+LMG2L["Running_a0"]["RollOffMinDistance"] = 5;
+LMG2L["Running_a0"]["SoundId"] = [[rbxasset://sounds/action_footsteps_plastic.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Running.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_a1"] = Instance.new("RemoteEvent", LMG2L["Running_a0"]);
+LMG2L["CharacterSoundEvent_a1"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Swimming
+LMG2L["Swimming_a2"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Swimming_a2"]["PlaybackSpeed"] = 1.6;
+LMG2L["Swimming_a2"]["RollOffMaxDistance"] = 150;
+LMG2L["Swimming_a2"]["Volume"] = 0.65;
+LMG2L["Swimming_a2"]["Looped"] = true;
+LMG2L["Swimming_a2"]["Name"] = [[Swimming]];
+LMG2L["Swimming_a2"]["RollOffMinDistance"] = 5;
+LMG2L["Swimming_a2"]["SoundId"] = [[rbxasset://sounds/action_swim.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Swimming.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_a3"] = Instance.new("RemoteEvent", LMG2L["Swimming_a2"]);
+LMG2L["CharacterSoundEvent_a3"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Climbing
+LMG2L["Climbing_a4"] = Instance.new("Sound", LMG2L["Head_68"]);
+LMG2L["Climbing_a4"]["RollOffMaxDistance"] = 150;
+LMG2L["Climbing_a4"]["Volume"] = 0.65;
+LMG2L["Climbing_a4"]["Looped"] = true;
+LMG2L["Climbing_a4"]["Name"] = [[Climbing]];
+LMG2L["Climbing_a4"]["RollOffMinDistance"] = 5;
+LMG2L["Climbing_a4"]["SoundId"] = [[rbxasset://sounds/action_footsteps_plastic.mp3]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Head.Climbing.CharacterSoundEvent
+LMG2L["CharacterSoundEvent_a5"] = Instance.new("RemoteEvent", LMG2L["Climbing_a4"]);
+LMG2L["CharacterSoundEvent_a5"]["Name"] = [[CharacterSoundEvent]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+LMG2L["LocalScript_a6"] = Instance.new("LocalScript", LMG2L["TextButton_27"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript.Script
+LMG2L["Script_a7"] = Instance.new("Script", LMG2L["LocalScript_a6"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript.RemoteEvent
+LMG2L["RemoteEvent_a8"] = Instance.new("RemoteEvent", LMG2L["LocalScript_a6"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Script
+LMG2L["Script_a9"] = Instance.new("Script", LMG2L["TextButton_27"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Stroke
+LMG2L["Stroke_aa"] = Instance.new("UIStroke", LMG2L["TextButton_27"]);
+LMG2L["Stroke_aa"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["Stroke_aa"]["Name"] = [[Stroke]];
+LMG2L["Stroke_aa"]["Color"] = Color3.fromRGB(191, 191, 191);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton
+LMG2L["TextButton_ab"] = Instance.new("TextButton", LMG2L["Exe_9"]);
+LMG2L["TextButton_ab"]["TextSize"] = 14;
+LMG2L["TextButton_ab"]["TextColor3"] = Color3.fromRGB(39, 39, 39);
+LMG2L["TextButton_ab"]["BackgroundColor3"] = Color3.fromRGB(239, 239, 239);
+LMG2L["TextButton_ab"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_ab"]["Size"] = UDim2.new(0, 25, 0, 22);
+LMG2L["TextButton_ab"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["TextButton_ab"]["Text"] = [[RE]];
+LMG2L["TextButton_ab"]["Position"] = UDim2.new(0.6965, 0, 0.65203, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+LMG2L["LocalScript_ac"] = Instance.new("LocalScript", LMG2L["TextButton_ab"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.ServerEvents
+LMG2L["ServerEvents_ad"] = Instance.new("Script", LMG2L["TextButton_ab"]);
+LMG2L["ServerEvents_ad"]["Name"] = [[ServerEvents]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.ServerEvents.Respawn
+LMG2L["Respawn_ae"] = Instance.new("RemoteEvent", LMG2L["ServerEvents_ad"]);
+LMG2L["Respawn_ae"]["Name"] = [[Respawn]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Stroke
+LMG2L["Stroke_af"] = Instance.new("UIStroke", LMG2L["TextButton_ab"]);
+LMG2L["Stroke_af"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["Stroke_af"]["Name"] = [[Stroke]];
+LMG2L["Stroke_af"]["Color"] = Color3.fromRGB(191, 191, 191);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.Script
+LMG2L["Script_b0"] = Instance.new("Script", LMG2L["TextButton_ab"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextLabel
+LMG2L["TextLabel_b1"] = Instance.new("TextLabel", LMG2L["Exe_9"]);
+LMG2L["TextLabel_b1"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_b1"]["TextSize"] = 14;
+LMG2L["TextLabel_b1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_b1"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_b1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_b1"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_b1"]["Size"] = UDim2.new(0, 21, 0, 18);
+LMG2L["TextLabel_b1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_b1"]["Text"] = [[>]];
+LMG2L["TextLabel_b1"]["Position"] = UDim2.new(0.0483, 0, 0.93645, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame
+LMG2L["Frame_b2"] = Instance.new("Frame", LMG2L["Exe_9"]);
+LMG2L["Frame_b2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Frame_b2"]["Size"] = UDim2.new(0, 98, 0, 247);
+LMG2L["Frame_b2"]["Position"] = UDim2.new(0.81207, 0, 0.10661, 0);
+LMG2L["Frame_b2"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_b3"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_b3"]["TextWrapped"] = true;
+LMG2L["TextButton_b3"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_b3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_b3"]["TextSize"] = 14;
+LMG2L["TextButton_b3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_b3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_b3"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_b3"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_b3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_b3"]["Text"] = [[Roblox HQ.txt]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_b4"] = Instance.new("RemoteEvent", LMG2L["TextButton_b3"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_b5"] = Instance.new("LocalScript", LMG2L["TextButton_b3"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_b6"] = Instance.new("Script", LMG2L["TextButton_b3"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_b7"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_b7"]["TextWrapped"] = true;
+LMG2L["TextButton_b7"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_b7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_b7"]["TextSize"] = 14;
+LMG2L["TextButton_b7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_b7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_b7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_b7"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_b7"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_b7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_b7"]["Text"] = [[MLG gun.txt]];
+LMG2L["TextButton_b7"]["Position"] = UDim2.new(0, 0, 0.04424, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_b8"] = Instance.new("RemoteEvent", LMG2L["TextButton_b7"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_b9"] = Instance.new("LocalScript", LMG2L["TextButton_b7"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_ba"] = Instance.new("Script", LMG2L["TextButton_b7"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_bb"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_bb"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_bb"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_bb"]["TextSize"] = 14;
+LMG2L["TextButton_bb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_bb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_bb"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_bb"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_bb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_bb"]["Text"] = [[Ghost.txt]];
+LMG2L["TextButton_bb"]["Position"] = UDim2.new(0, 0, 0.08848, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_bc"] = Instance.new("Script", LMG2L["TextButton_bb"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script.FakeMouse
+LMG2L["FakeMouse_bd"] = Instance.new("ModuleScript", LMG2L["Script_bc"]);
+LMG2L["FakeMouse_bd"]["Name"] = [[FakeMouse]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script.FakeMouse.Client
+LMG2L["Client_be"] = Instance.new("LocalScript", LMG2L["FakeMouse_bd"]);
+LMG2L["Client_be"]["Enabled"] = false;
+LMG2L["Client_be"]["Name"] = [[Client]];
+LMG2L["Client_be"]["Disabled"] = true;
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script.FakeMouse.GetPlr
+LMG2L["GetPlr_bf"] = Instance.new("RemoteEvent", LMG2L["FakeMouse_bd"]);
+LMG2L["GetPlr_bf"]["Name"] = [[GetPlr]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script.FakeMouse.GetPlrE
+LMG2L["GetPlrE_c0"] = Instance.new("RemoteFunction", LMG2L["FakeMouse_bd"]);
+LMG2L["GetPlrE_c0"]["Name"] = [[GetPlrE]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_c1"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_c1"]["TextWrapped"] = true;
+LMG2L["TextButton_c1"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_c1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_c1"]["TextSize"] = 14;
+LMG2L["TextButton_c1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_c1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_c1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_c1"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_c1"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_c1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_c1"]["Text"] = [[I AM GOD!.txt]];
+LMG2L["TextButton_c1"]["Position"] = UDim2.new(0, 0, 0.13272, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_c2"] = Instance.new("Script", LMG2L["TextButton_c1"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_c3"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_c3"]["TextWrapped"] = true;
+LMG2L["TextButton_c3"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_c3"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_c3"]["TextSize"] = 14;
+LMG2L["TextButton_c3"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_c3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_c3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_c3"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_c3"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_c3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_c3"]["Text"] = [[Ro-xploit.txt]];
+LMG2L["TextButton_c3"]["Position"] = UDim2.new(0, 0, 0.17696, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_c4"] = Instance.new("RemoteEvent", LMG2L["TextButton_c3"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_c5"] = Instance.new("LocalScript", LMG2L["TextButton_c3"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_c6"] = Instance.new("Script", LMG2L["TextButton_c3"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.UIStroke
+LMG2L["UIStroke_c7"] = Instance.new("UIStroke", LMG2L["Frame_b2"]);
+LMG2L["UIStroke_c7"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+LMG2L["UIStroke_c7"]["Color"] = Color3.fromRGB(157, 157, 157);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_c8"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_c8"]["TextWrapped"] = true;
+LMG2L["TextButton_c8"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_c8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_c8"]["TextSize"] = 14;
+LMG2L["TextButton_c8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_c8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_c8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_c8"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_c8"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_c8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_c8"]["Text"] = [[Chicken.txt]];
+LMG2L["TextButton_c8"]["Position"] = UDim2.new(0, 0, 0.2215, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_c9"] = Instance.new("Script", LMG2L["TextButton_c8"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script.RemoteEvent
+LMG2L["RemoteEvent_ca"] = Instance.new("RemoteEvent", LMG2L["Script_c9"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_cb"] = Instance.new("LocalScript", LMG2L["TextButton_c8"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_cc"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_cc"]["TextWrapped"] = true;
+LMG2L["TextButton_cc"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_cc"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_cc"]["TextSize"] = 14;
+LMG2L["TextButton_cc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_cc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_cc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_cc"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_cc"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_cc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_cc"]["Text"] = [[Gravity.txt]];
+LMG2L["TextButton_cc"]["Position"] = UDim2.new(0, 0, 0.26603, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_cd"] = Instance.new("RemoteEvent", LMG2L["TextButton_cc"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_ce"] = Instance.new("LocalScript", LMG2L["TextButton_cc"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_cf"] = Instance.new("Script", LMG2L["TextButton_cc"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_d0"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_d0"]["TextWrapped"] = true;
+LMG2L["TextButton_d0"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_d0"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_d0"]["TextSize"] = 14;
+LMG2L["TextButton_d0"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_d0"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_d0"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_d0"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_d0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d0"]["Text"] = [[Hammer.txt]];
+LMG2L["TextButton_d0"]["Position"] = UDim2.new(0, 0, 0.31057, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_d1"] = Instance.new("Script", LMG2L["TextButton_d0"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_d2"] = Instance.new("LocalScript", LMG2L["TextButton_d0"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_d3"] = Instance.new("RemoteEvent", LMG2L["TextButton_d0"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_d4"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_d4"]["TextWrapped"] = true;
+LMG2L["TextButton_d4"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_d4"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_d4"]["TextSize"] = 14;
+LMG2L["TextButton_d4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_d4"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_d4"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_d4"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_d4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d4"]["Text"] = [[Draw tool.txt]];
+LMG2L["TextButton_d4"]["Position"] = UDim2.new(0, 0, 0.3551, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_d5"] = Instance.new("LocalScript", LMG2L["TextButton_d4"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_d6"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_d6"]["TextWrapped"] = true;
+LMG2L["TextButton_d6"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_d6"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_d6"]["TextSize"] = 14;
+LMG2L["TextButton_d6"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_d6"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_d6"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_d6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d6"]["Text"] = [[Thomas.txt]];
+LMG2L["TextButton_d6"]["Position"] = UDim2.new(0, 0, 0.53324, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_d7"] = Instance.new("LocalScript", LMG2L["TextButton_d6"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_d8"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_d8"]["TextWrapped"] = true;
+LMG2L["TextButton_d8"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_d8"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_d8"]["TextSize"] = 14;
+LMG2L["TextButton_d8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_d8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_d8"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_d8"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_d8"]["Text"] = [[Palace.txt]];
+LMG2L["TextButton_d8"]["Position"] = UDim2.new(0, 0, 0.4887, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_d9"] = Instance.new("RemoteEvent", LMG2L["TextButton_d8"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_da"] = Instance.new("LocalScript", LMG2L["TextButton_d8"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_db"] = Instance.new("Script", LMG2L["TextButton_d8"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_dc"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_dc"]["TextWrapped"] = true;
+LMG2L["TextButton_dc"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_dc"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_dc"]["TextSize"] = 14;
+LMG2L["TextButton_dc"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_dc"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_dc"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_dc"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_dc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_dc"]["Text"] = [[MLG.txt]];
+LMG2L["TextButton_dc"]["Position"] = UDim2.new(0, 0, 0.44417, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_dd"] = Instance.new("Script", LMG2L["TextButton_dc"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_de"] = Instance.new("Script", LMG2L["TextButton_dc"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_df"] = Instance.new("Script", LMG2L["TextButton_dc"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_e0"] = Instance.new("Script", LMG2L["TextButton_dc"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_e1"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_e1"]["TextWrapped"] = true;
+LMG2L["TextButton_e1"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_e1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_e1"]["TextSize"] = 14;
+LMG2L["TextButton_e1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_e1"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_e1"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_e1"]["Text"] = [[Mom RP.txt]];
+LMG2L["TextButton_e1"]["Position"] = UDim2.new(0, 0, 0.39964, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_e2"] = Instance.new("Script", LMG2L["TextButton_e1"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_e3"] = Instance.new("LocalScript", LMG2L["TextButton_e1"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_e4"] = Instance.new("RemoteEvent", LMG2L["TextButton_e1"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_e5"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_e5"]["TextWrapped"] = true;
+LMG2L["TextButton_e5"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_e5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_e5"]["TextSize"] = 14;
+LMG2L["TextButton_e5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_e5"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_e5"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_e5"]["Text"] = [[Plane.txt]];
+LMG2L["TextButton_e5"]["Position"] = UDim2.new(0, 0, 0.71138, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_e6"] = Instance.new("LocalScript", LMG2L["TextButton_e5"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_e7"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_e7"]["TextWrapped"] = true;
+LMG2L["TextButton_e7"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_e7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_e7"]["TextSize"] = 14;
+LMG2L["TextButton_e7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_e7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_e7"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_e7"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_e7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_e7"]["Text"] = [[Jhon Doe.txt]];
+LMG2L["TextButton_e7"]["Position"] = UDim2.new(0, 0, 0.66684, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_e8"] = Instance.new("Script", LMG2L["TextButton_e7"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_e9"] = Instance.new("LocalScript", LMG2L["TextButton_e7"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_ea"] = Instance.new("RemoteEvent", LMG2L["TextButton_e7"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_eb"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_eb"]["TextWrapped"] = true;
+LMG2L["TextButton_eb"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_eb"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_eb"]["TextSize"] = 14;
+LMG2L["TextButton_eb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_eb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_eb"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_eb"]["Size"] = UDim2.new(0, 99, 0, 11);
+LMG2L["TextButton_eb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_eb"]["Text"] = [[RC7 Cloud.txt]];
+LMG2L["TextButton_eb"]["Position"] = UDim2.new(0, 0, 0.62231, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_ec"] = Instance.new("Script", LMG2L["TextButton_eb"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_ed"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_ed"]["TextWrapped"] = true;
+LMG2L["TextButton_ed"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_ed"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_ed"]["TextSize"] = 14;
+LMG2L["TextButton_ed"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_ed"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_ed"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_ed"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_ed"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_ed"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_ed"]["Text"] = [[Disco Fog.txt]];
+LMG2L["TextButton_ed"]["Position"] = UDim2.new(0, 0, 0.57777, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_ee"] = Instance.new("Script", LMG2L["TextButton_ed"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_ef"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_ef"]["TextWrapped"] = true;
+LMG2L["TextButton_ef"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_ef"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_ef"]["TextSize"] = 14;
+LMG2L["TextButton_ef"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_ef"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_ef"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_ef"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_ef"]["Size"] = UDim2.new(0, 99, 0, 11);
+LMG2L["TextButton_ef"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_ef"]["Text"] = [[China Hint.txt]];
+LMG2L["TextButton_ef"]["Position"] = UDim2.new(0, 0, 0.75591, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_f0"] = Instance.new("Script", LMG2L["TextButton_ef"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_f1"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_f1"]["TextWrapped"] = true;
+LMG2L["TextButton_f1"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_f1"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_f1"]["TextSize"] = 14;
+LMG2L["TextButton_f1"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_f1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_f1"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_f1"]["Size"] = UDim2.new(0, 99, 0, 11);
+LMG2L["TextButton_f1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f1"]["Text"] = [[Lua Hammer.txt]];
+LMG2L["TextButton_f1"]["Position"] = UDim2.new(0, 0, 0.80044, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.RemoteEvent
+LMG2L["RemoteEvent_f2"] = Instance.new("RemoteEvent", LMG2L["TextButton_f1"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_f3"] = Instance.new("LocalScript", LMG2L["TextButton_f1"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_f4"] = Instance.new("Script", LMG2L["TextButton_f1"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_f5"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_f5"]["TextWrapped"] = true;
+LMG2L["TextButton_f5"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_f5"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_f5"]["TextSize"] = 14;
+LMG2L["TextButton_f5"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_f5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_f5"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_f5"]["Size"] = UDim2.new(0, 106, 0, 11);
+LMG2L["TextButton_f5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f5"]["Text"] = [[Spooky.txt]];
+LMG2L["TextButton_f5"]["Position"] = UDim2.new(0, 0, 0.84498, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_f6"] = Instance.new("Script", LMG2L["TextButton_f5"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_f7"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_f7"]["TextWrapped"] = true;
+LMG2L["TextButton_f7"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_f7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_f7"]["TextSize"] = 14;
+LMG2L["TextButton_f7"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_f7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_f7"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_f7"]["Size"] = UDim2.new(0, 96, 0, 11);
+LMG2L["TextButton_f7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f7"]["Text"] = [[C Sonata.txt]];
+LMG2L["TextButton_f7"]["Position"] = UDim2.new(0, 0, 0.88951, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+LMG2L["LocalScript_f8"] = Instance.new("LocalScript", LMG2L["TextButton_f7"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton
+LMG2L["TextButton_f9"] = Instance.new("TextButton", LMG2L["Frame_b2"]);
+LMG2L["TextButton_f9"]["TextWrapped"] = true;
+LMG2L["TextButton_f9"]["BorderSizePixel"] = 0;
+LMG2L["TextButton_f9"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextButton_f9"]["TextSize"] = 14;
+LMG2L["TextButton_f9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_f9"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_f9"]["BackgroundTransparency"] = 1;
+LMG2L["TextButton_f9"]["Size"] = UDim2.new(0, 94, 0, 11);
+LMG2L["TextButton_f9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_f9"]["Text"] = [[Taco Rain.txt]];
+LMG2L["TextButton_f9"]["Position"] = UDim2.new(0, 0, 0.93405, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.Script
+LMG2L["Script_fa"] = Instance.new("Script", LMG2L["TextButton_f9"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextBox
+LMG2L["TextBox_fb"] = Instance.new("TextBox", LMG2L["Exe_9"]);
+LMG2L["TextBox_fb"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextBox_fb"]["TextWrapped"] = true;
+LMG2L["TextBox_fb"]["TextSize"] = 14;
+LMG2L["TextBox_fb"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextBox_fb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextBox_fb"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextBox_fb"]["Size"] = UDim2.new(0, 534, 0, 18);
+LMG2L["TextBox_fb"]["Position"] = UDim2.new(0.08407, 0, 0.93645, 0);
+LMG2L["TextBox_fb"]["BorderColor3"] = Color3.fromRGB(128, 132, 132);
+LMG2L["TextBox_fb"]["Text"] = [[]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Credits
+LMG2L["Credits_fc"] = Instance.new("Frame", LMG2L["Gui_8"]);
+LMG2L["Credits_fc"]["Visible"] = false;
+LMG2L["Credits_fc"]["BackgroundColor3"] = Color3.fromRGB(248, 248, 248);
+LMG2L["Credits_fc"]["Size"] = UDim2.new(0, 597, 0, 411);
+LMG2L["Credits_fc"]["Position"] = UDim2.new(0, 0, -0.2, 0);
+LMG2L["Credits_fc"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+LMG2L["Credits_fc"]["Name"] = [[Credits]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Credits.Frame
+LMG2L["Frame_fd"] = Instance.new("Frame", LMG2L["Credits_fc"]);
+LMG2L["Frame_fd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["Frame_fd"]["Size"] = UDim2.new(0, 572, 0, 370);
+LMG2L["Frame_fd"]["Position"] = UDim2.new(0.01968, 0, 0.07984, 0);
+LMG2L["Frame_fd"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Credits.TextLabel
+LMG2L["TextLabel_fe"] = Instance.new("TextLabel", LMG2L["Credits_fc"]);
+LMG2L["TextLabel_fe"]["TextWrapped"] = true;
+LMG2L["TextLabel_fe"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_fe"]["TextSize"] = 14;
+LMG2L["TextLabel_fe"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_fe"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_fe"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_fe"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_fe"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_fe"]["Size"] = UDim2.new(0, 564, 0, 15);
+LMG2L["TextLabel_fe"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_fe"]["Text"] = [[said this written by br8x_yt, charmQuell and LinuxDaBuilder]]; --[[(but LIONARC_HELON was Converted it)]]
+LMG2L["TextLabel_fe"]["Position"] = UDim2.new(0.01968, 0, 0.09444, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Credits.TextLabel
+LMG2L["TextLabel_ff"] = Instance.new("TextLabel", LMG2L["Credits_fc"]);
+LMG2L["TextLabel_ff"]["TextWrapped"] = true;
+LMG2L["TextLabel_ff"]["BorderSizePixel"] = 0;
+LMG2L["TextLabel_ff"]["TextSize"] = 14;
+LMG2L["TextLabel_ff"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_ff"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextLabel_ff"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_ff"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextLabel_ff"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_ff"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_ff"]["Size"] = UDim2.new(0, 585, 0, 357);
+LMG2L["TextLabel_ff"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextLabel_ff"]["Position"] = UDim2.new(0.01968, 0, 0.13094, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.TextButton
+LMG2L["TextButton_100"] = Instance.new("TextButton", LMG2L["Gui_8"]);
+LMG2L["TextButton_100"]["TextSize"] = 14;
+LMG2L["TextButton_100"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_100"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_100"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_100"]["Size"] = UDim2.new(0, 64, 0, 13);
+LMG2L["TextButton_100"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+LMG2L["TextButton_100"]["Text"] = [[Executor]];
+LMG2L["TextButton_100"]["Position"] = UDim2.new(1.06786, 0, 1, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.TextButton.LocalScript
+LMG2L["LocalScript_101"] = Instance.new("LocalScript", LMG2L["TextButton_100"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.TextButton
+LMG2L["TextButton_102"] = Instance.new("TextButton", LMG2L["Gui_8"]);
+LMG2L["TextButton_102"]["TextSize"] = 14;
+LMG2L["TextButton_102"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TextButton_102"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextButton_102"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TextButton_102"]["Size"] = UDim2.new(0, 68, 0, 13);
+LMG2L["TextButton_102"]["BorderColor3"] = Color3.fromRGB(214, 214, 214);
+LMG2L["TextButton_102"]["Text"] = [[Credits]];
+LMG2L["TextButton_102"]["Position"] = UDim2.new(6.98438, 0, 1, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.TextButton.LocalScript
+LMG2L["LocalScript_103"] = Instance.new("LocalScript", LMG2L["TextButton_102"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.min
+LMG2L["min_104"] = Instance.new("TextButton", LMG2L["drag_2"]);
+LMG2L["min_104"]["BorderSizePixel"] = 0;
+LMG2L["min_104"]["TextSize"] = 14;
+LMG2L["min_104"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["min_104"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["min_104"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["min_104"]["AnchorPoint"] = Vector2.new(1, 0);
+LMG2L["min_104"]["BackgroundTransparency"] = 1;
+LMG2L["min_104"]["Size"] = UDim2.new(0, 39, 0, 24);
+LMG2L["min_104"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["min_104"]["Text"] = [[]];
+LMG2L["min_104"]["Name"] = [[min]];
+LMG2L["min_104"]["Position"] = UDim2.new(1.06501, -120, -0, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.min.frame
+LMG2L["frame_105"] = Instance.new("Frame", LMG2L["min_104"]);
+LMG2L["frame_105"]["BorderSizePixel"] = 0;
+LMG2L["frame_105"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["frame_105"]["Size"] = UDim2.new(1, 0, 1, 0);
+LMG2L["frame_105"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["frame_105"]["Name"] = [[frame]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.min.ImageLabel
+LMG2L["ImageLabel_106"] = Instance.new("ImageLabel", LMG2L["min_104"]);
+LMG2L["ImageLabel_106"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_106"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_106"]["ImageContent"] = ;
+LMG2L["ImageLabel_106"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ImageLabel_106"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+LMG2L["ImageLabel_106"]["Image"] = [[http://www.roblox.com/asset/?id=14953689987]];
+LMG2L["ImageLabel_106"]["Size"] = UDim2.new(0, 12, 0, 12);
+LMG2L["ImageLabel_106"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ImageLabel_106"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_106"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.min.LocalScript
+LMG2L["LocalScript_107"] = Instance.new("LocalScript", LMG2L["min_104"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.max
+LMG2L["max_108"] = Instance.new("TextButton", LMG2L["drag_2"]);
+LMG2L["max_108"]["BorderSizePixel"] = 0;
+LMG2L["max_108"]["TextSize"] = 14;
+LMG2L["max_108"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["max_108"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["max_108"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["max_108"]["AnchorPoint"] = Vector2.new(1, 0);
+LMG2L["max_108"]["BackgroundTransparency"] = 1;
+LMG2L["max_108"]["Size"] = UDim2.new(0, 37, 0, 24);
+LMG2L["max_108"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["max_108"]["Text"] = [[]];
+LMG2L["max_108"]["Name"] = [[max]];
+LMG2L["max_108"]["Position"] = UDim2.new(1.02648, -60, -0, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.max.frame
+LMG2L["frame_109"] = Instance.new("Frame", LMG2L["max_108"]);
+LMG2L["frame_109"]["BorderSizePixel"] = 0;
+LMG2L["frame_109"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["frame_109"]["Size"] = UDim2.new(1, 0, 1, 0);
+LMG2L["frame_109"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["frame_109"]["Name"] = [[frame]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.max.ImageLabel
+LMG2L["ImageLabel_10a"] = Instance.new("ImageLabel", LMG2L["max_108"]);
+LMG2L["ImageLabel_10a"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_10a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_10a"]["ImageContent"] = ;
+LMG2L["ImageLabel_10a"]["ImageColor3"] = Color3.fromRGB(208, 208, 208);
+LMG2L["ImageLabel_10a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+LMG2L["ImageLabel_10a"]["Image"] = [[http://www.roblox.com/asset/?id=14953690282]];
+LMG2L["ImageLabel_10a"]["Size"] = UDim2.new(0, 12, 0, 12);
+LMG2L["ImageLabel_10a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ImageLabel_10a"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_10a"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.close
+LMG2L["close_10b"] = Instance.new("TextButton", LMG2L["drag_2"]);
+LMG2L["close_10b"]["BorderSizePixel"] = 0;
+LMG2L["close_10b"]["TextSize"] = 14;
+LMG2L["close_10b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["close_10b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["close_10b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["close_10b"]["AnchorPoint"] = Vector2.new(1, 0);
+LMG2L["close_10b"]["BackgroundTransparency"] = 1;
+LMG2L["close_10b"]["Size"] = UDim2.new(0, 44, 0, 24);
+LMG2L["close_10b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["close_10b"]["Text"] = [[]];
+LMG2L["close_10b"]["Name"] = [[close]];
+LMG2L["close_10b"]["Position"] = UDim2.new(1, 0, -0, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.close.frame
+LMG2L["frame_10c"] = Instance.new("Frame", LMG2L["close_10b"]);
+LMG2L["frame_10c"]["BorderSizePixel"] = 0;
+LMG2L["frame_10c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["frame_10c"]["Size"] = UDim2.new(1, 0, 0.95908, 0);
+LMG2L["frame_10c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["frame_10c"]["Name"] = [[frame]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.close.frame.noround
+LMG2L["noround_10d"] = Instance.new("Frame", LMG2L["frame_10c"]);
+LMG2L["noround_10d"]["BorderSizePixel"] = 0;
+LMG2L["noround_10d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["noround_10d"]["Size"] = UDim2.new(0.5, 0, 1, 0);
+LMG2L["noround_10d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["noround_10d"]["Name"] = [[noround]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.close.frame.noround
+LMG2L["noround_10e"] = Instance.new("Frame", LMG2L["frame_10c"]);
+LMG2L["noround_10e"]["BorderSizePixel"] = 0;
+LMG2L["noround_10e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["noround_10e"]["Size"] = UDim2.new(1, 0, 0.5, 0);
+LMG2L["noround_10e"]["Position"] = UDim2.new(0, 0, 0.5, 0);
+LMG2L["noround_10e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["noround_10e"]["Name"] = [[noround]];
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.close.ImageLabel
+LMG2L["ImageLabel_10f"] = Instance.new("ImageLabel", LMG2L["close_10b"]);
+LMG2L["ImageLabel_10f"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_10f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["ImageLabel_10f"]["ImageContent"] = ;
+LMG2L["ImageLabel_10f"]["ImageColor3"] = Color3.fromRGB(113, 113, 113);
+LMG2L["ImageLabel_10f"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+LMG2L["ImageLabel_10f"]["Image"] = [[http://www.roblox.com/asset/?id=274958830]];
+LMG2L["ImageLabel_10f"]["Size"] = UDim2.new(0, 12, 0, 12);
+LMG2L["ImageLabel_10f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ImageLabel_10f"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_10f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.close.LocalScript
+LMG2L["LocalScript_110"] = Instance.new("LocalScript", LMG2L["close_10b"]);
+
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.TEXT
+LMG2L["TEXT_111"] = Instance.new("TextLabel", LMG2L["ScreenGui_1"]);
+LMG2L["TEXT_111"]["TextWrapped"] = true;
+LMG2L["TEXT_111"]["BorderSizePixel"] = 0;
+LMG2L["TEXT_111"]["TextSize"] = 14;
+LMG2L["TEXT_111"]["TextScaled"] = true;
+LMG2L["TEXT_111"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TEXT_111"]["FontFace"] = Font.new([[rbxasset://fonts/families/PressStart2P.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L["TEXT_111"]["TextColor3"] = Color3.fromRGB(0, 255, 0);
+LMG2L["TEXT_111"]["BackgroundTransparency"] = 1;
+LMG2L["TEXT_111"]["Size"] = UDim2.new(0, 407, 0, 80);
+LMG2L["TEXT_111"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["TEXT_111"]["Text"] = [[INJECT!]];
+LMG2L["TEXT_111"]["Name"] = [[TEXT]];
+LMG2L["TEXT_111"]["Position"] = UDim2.new(0.347, 0, -0.999, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.Icon
+LMG2L["Icon_112"] = Instance.new("ImageLabel", LMG2L["ScreenGui_1"]);
+LMG2L["Icon_112"]["BorderSizePixel"] = 0;
+LMG2L["Icon_112"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- LMG2L["Icon_112"]["ImageContent"] = ;
+LMG2L["Icon_112"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+LMG2L["Icon_112"]["Image"] = [[rbxassetid://76043639419347]];
+LMG2L["Icon_112"]["Size"] = UDim2.new(0, 80, 0, 64);
+LMG2L["Icon_112"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["Icon_112"]["BackgroundTransparency"] = 1;
+LMG2L["Icon_112"]["Name"] = [[Icon]];
+LMG2L["Icon_112"]["Position"] = UDim2.new(0.498, 0, 1.12, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.Icon.TextLabel
+LMG2L["TextLabel_113"] = Instance.new("TextLabel", LMG2L["Icon_112"]);
+LMG2L["TextLabel_113"]["TextWrapped"] = true;
+LMG2L["TextLabel_113"]["BorderSizePixel"] = 2;
+LMG2L["TextLabel_113"]["TextSize"] = 15;
+LMG2L["TextLabel_113"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+LMG2L["TextLabel_113"]["TextTransparency"] = 1;
+LMG2L["TextLabel_113"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+LMG2L["TextLabel_113"]["TextScaled"] = true;
+LMG2L["TextLabel_113"]["BackgroundColor3"] = Color3.fromRGB(247, 253, 252);
+LMG2L["TextLabel_113"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+LMG2L["TextLabel_113"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["TextLabel_113"]["BackgroundTransparency"] = 1;
+LMG2L["TextLabel_113"]["Size"] = UDim2.new(0, 170, 0, 78);
+LMG2L["TextLabel_113"]["BorderColor3"] = Color3.fromRGB(135, 153, 153);
+LMG2L["TextLabel_113"]["Text"] = [[Welcome to FSA
+
+Written by br8x_yt, charmQuell, pldeternity and LinuxDaBuilder]];
+LMG2L["TextLabel_113"]["Position"] = UDim2.new(1.4, 3, -0.10937, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.Icon.ImageLabel
+LMG2L["ImageLabel_114"] = Instance.new("ImageLabel", LMG2L["Icon_112"]);
+LMG2L["ImageLabel_114"]["BorderSizePixel"] = 0;
+LMG2L["ImageLabel_114"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+LMG2L["ImageLabel_114"]["ImageTransparency"] = 1;
+-- LMG2L["ImageLabel_114"]["ImageContent"] = ;
+LMG2L["ImageLabel_114"]["Image"] = [[rbxassetid://103140592641204]];
+LMG2L["ImageLabel_114"]["Size"] = UDim2.new(0, 112, 0, 112);
+LMG2L["ImageLabel_114"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+LMG2L["ImageLabel_114"]["BackgroundTransparency"] = 1;
+LMG2L["ImageLabel_114"]["Position"] = UDim2.new(-0.25239, 0, -0.35938, 0);
+
+
+-- Players.FRP20000.PlayerGui.ScreenGui.Icon.ImageLabel.LocalScript
+LMG2L["LocalScript_115"] = Instance.new("LocalScript", LMG2L["ImageLabel_114"]);
+
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Drag Gui Script
+local function C_3()
+	local script = LMG2L["Drag Gui Script_3"];
+	
+	function dragify(Main)
+dragToggle = nil
+dragSpeed = 0.95 -- You can edit this.
+dragInput = nil
+dragStart = nil
+dragPos = nil
+
+function updateInput(input)
+Delta = input.Position - dragStart
+Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+game:GetService("TweenService"):Create(Main, TweenInfo.new(.25), {Position = Position}):Play()
+end
+
+Main.InputBegan:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+dragToggle = true
+dragStart = input.Position
+startPos = Main.Position
+input.Changed:Connect(function()
+if (input.UserInputState == Enum.UserInputState.End) then
+dragToggle = false
+end
+end)
+end
+end)
+
+Main.InputChanged:Connect(function(input)
+if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+dragInput = input
+end
+end)
+
+game:GetService("UserInputService").InputChanged:Connect(function(input)
+if (input == dragInput and dragToggle) then
+updateInput(input)
+end
+end)
+end
+
+dragify(script.Parent)
+end;
+task.spawn(C_3);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.TextButton.LocalScript
+local function C_7()
+	local script = LMG2L["LocalScript_7"];
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
+end)
+end;
+task.spawn(C_7);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.ScrollingFrame.TextLabel.LOG
+local function C_d()
+	local script = LMG2L["LOG_d"];
+	
+	local logLabel = script.Parent  
+local logMessages = {}  
+
+logLabel.RichText = true
+logLabel.Text = ""  
+
+
+local function addLogMessage(messageType, message)
+	local formattedMessage = ""
+
+	if messageType == "Output" then
+		formattedMessage = string.format('<font color="rgb(0, 0, 0)">[Output] %s</font>', message)  
+	elseif messageType == "Information" then
+		formattedMessage = string.format('<font color="rgb(0, 0, 0)">[Info] %s</font>', message)  
+	elseif messageType == "Warning" then
+		formattedMessage = string.format('<font color="rgb(0, 0, 0)">[Warning] %s</font>', message)  
+	elseif messageType == "Error" then
+		formattedMessage = string.format('<font color="rgb(0, 0, 0)">[Error] %s</font>', message)  
+	end
+
+
+	table.insert(logMessages, 1, formattedMessage)
+
+
+	logLabel.Text = table.concat(logMessages, "\n")
+end
+
+
+game:GetService("LogService").MessageOut:Connect(function(message, messageType)
+	local messageTypeText
+	if messageType == Enum.MessageType.MessageOutput then
+		messageTypeText = "Output"
+	elseif messageType == Enum.MessageType.MessageInfo then
+		messageTypeText = "Information"
+	elseif messageType == Enum.MessageType.MessageWarning then
+		messageTypeText = "Warning"
+	elseif messageType == Enum.MessageType.MessageError then
+		messageTypeText = "Error"
+	end
+
+	addLogMessage(messageTypeText, message)
+end)
+end;
+task.spawn(C_d);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.EXE.LocalScript
+local function C_10()
+	local script = LMG2L["LocalScript_10"];
+	
+	local RS = script.Parent.RemoteEvent
+
+script.Parent.MouseButton1Click:Connect(function()
+	loadstring(script.Parent.Parent.Field.Text)()
+end)
+end;
+task.spawn(C_10);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+local function C_19()
+	local script = LMG2L["LocalScript_19"];
+	
+	local text = script.Parent.Parent.Field
+
+script.Parent.MouseButton1Click:Connect(function()
+	text.Text = "Cleared!"
+	wait(1)
+	text.Text = ""
+end)
+end;
+task.spawn(C_19);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+local function C_1d()
+	local script = LMG2L["LocalScript_1d"];
+	
+	script.Parent.MouseButton1Click:Connect(function() 	script.Parent.Parent.Parent.Parent.Parent.TEXT:TweenPosition(UDim2.new(0.344, 0,0.342, 0)) 	wait(5) 	script.Parent.Parent.Parent.Parent.Parent.TEXT:TweenPosition(UDim2.new(0.347, 0,1, 0)) end)
+end;
+task.spawn(C_1d);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+local function C_1e()
+	local script = LMG2L["LocalScript_1e"];
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.Visible = true
+	script.Parent.Parent.Parent.Parent.Parent.Icon:TweenPosition(UDim2.new(0.491, 0,0.393, 0))
+	wait(3)
+	script.Parent.Parent.Parent.Parent.Parent.Icon:TweenPosition(UDim2.new(0.061, 0,0.89, 0))
+	wait(1)
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.9
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.8
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.7
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.6
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.5
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.4
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.3
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.2
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0.1
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextTransparency = 0
+	wait()
+	script.Parent.Parent.Parent.Parent.Parent.Icon.TextLabel.TextStrokeTransparency = 0
+end)
+
+-- sigma boy
+end;
+task.spawn(C_1e);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+local function C_24()
+	local script = LMG2L["LocalScript_24"];
+	
+	local text = script.Parent.Parent.Field
+local hidden = false
+script.Parent.MouseButton1Click:Connect(function()
+if hidden == false then
+
+
+		text.TextTransparency = 0.1
+		wait()
+		text.TextTransparency = 0.2
+		wait()
+		text.TextTransparency = 0.3
+		wait()
+		text.TextTransparency = 0.4
+		wait()
+		text.TextTransparency = 0.5
+		wait()
+		text.TextTransparency = 0.6
+		wait()
+		text.TextTransparency = 0.7
+		wait()
+		text.TextTransparency = 0.8
+		wait()
+		text.TextTransparency = 0.9
+		wait()
+		text.TextTransparency = 1
+	hidden = true
+else
+	hidden = false
+		text.TextTransparency = 0.9
+		wait()
+		text.TextTransparency = 0.8
+		wait()
+		text.TextTransparency = 0.7
+		wait()
+		text.TextTransparency = 0.6
+		wait()
+		text.TextTransparency = 0.5
+		wait()
+		text.TextTransparency = 0.4
+		wait()
+		text.TextTransparency = 0.3
+		wait()
+		text.TextTransparency = 0.2
+		wait()
+		text.TextTransparency = 0.1
+		wait()
+		text.TextTransparency = 0
+end	
+end)
+
+end;
+task.spawn(C_24);
+
+LMG2L["TextButton_27"].MouseButton1Click:Connect(function()
+------------------------------------------------------------
+----        R6 Character            ----
+------------------------------------------------------------
+
+local plr = game.Players.LocalPlayer
+
+local Main = game.Players:GetHumanoidDescriptionFromUserId(plr.CharacterAppearanceId)
+local morph = game.Players:CreateHumanoidModelFromDescription(Main, Enum.HumanoidRigType.R6)
+local oldchar = plr.Character
+
+morph:SetPrimaryPartCFrame(plr.Character.PrimaryPart.CFrame)
+morph.Name = plr.Name
+plr.Character = morph
+morph.Parent = workspace
+
+oldchar:Destroy()
+
+------------------------------------------------------------
+----        R6 Animation           ----
+------------------------------------------------------------
+
+wait(.1)
+
+local Figure = morph
+local Torso = Figure:WaitForChild("Torso")
+local RightShoulder = Torso:WaitForChild("Right Shoulder")
+local LeftShoulder = Torso:WaitForChild("Left Shoulder")
+local RightHip = Torso:WaitForChild("Right Hip")
+local LeftHip = Torso:WaitForChild("Left Hip")
+local Neck = Torso:WaitForChild("Neck")
+local Humanoid = Figure:WaitForChild("Humanoid")
+local pose = "Standing"
+ 
+local currentAnim = ""
+local currentAnimInstance = nil
+local currentAnimTrack = nil
+local currentAnimKeyframeHandler = nil
+local currentAnimSpeed = 1.0
+local animTable = {}
+local animNames = { 
+idle =     {    
+{ id = "http://www.roblox.com/asset/?id=180435571", weight = 9 },
+{ id = "http://www.roblox.com/asset/?id=180435792", weight = 1 }
+},
+walk =     {     
+{ id = "http://www.roblox.com/asset/?id=180426354", weight = 10 } 
+}, 
+run =     {
+{ id = "run.xml", weight = 10 } 
+}, 
+jump =     {
+{ id = "http://www.roblox.com/asset/?id=125750702", weight = 10 } 
+}, 
+fall =     {
+{ id = "http://www.roblox.com/asset/?id=180436148", weight = 10 } 
+}, 
+climb = {
+{ id = "http://www.roblox.com/asset/?id=180436334", weight = 10 } 
+}, 
+sit =     {
+{ id = "http://www.roblox.com/asset/?id=178130996", weight = 10 } 
+},    
+toolnone = {
+{ id = "http://www.roblox.com/asset/?id=182393478", weight = 10 } 
+},
+toolslash = {
+{ id = "http://www.roblox.com/asset/?id=129967390", weight = 10 } 
+--                { id = "slash.xml", weight = 10 } 
+ 
+},
+toollunge = {
+{ id = "http://www.roblox.com/asset/?id=129967478", weight = 10 } 
+},
+wave = {
+{ id = "http://www.roblox.com/asset/?id=128777973", weight = 10 } 
+},
+point = {
+{ id = "http://www.roblox.com/asset/?id=128853357", weight = 10 } 
+},
+dance1 = {
+{ id = "http://www.roblox.com/asset/?id=182435998", weight = 10 }, 
+{ id = "http://www.roblox.com/asset/?id=182491037", weight = 10 }, 
+{ id = "http://www.roblox.com/asset/?id=182491065", weight = 10 } 
+},
+dance2 = {
+{ id = "http://www.roblox.com/asset/?id=182436842", weight = 10 }, 
+{ id = "http://www.roblox.com/asset/?id=182491248", weight = 10 }, 
+{ id = "http://www.roblox.com/asset/?id=182491277", weight = 10 } 
+},
+dance3 = {
+{ id = "http://www.roblox.com/asset/?id=182436935", weight = 10 }, 
+{ id = "http://www.roblox.com/asset/?id=182491368", weight = 10 }, 
+{ id = "http://www.roblox.com/asset/?id=182491423", weight = 10 } 
+},
+laugh = {
+{ id = "http://www.roblox.com/asset/?id=129423131", weight = 10 } 
+},
+cheer = {
+{ id = "http://www.roblox.com/asset/?id=129423030", weight = 10 } 
+},
+}
+local dances = {"dance1", "dance2", "dance3"}
+ 
+-- Existance in this list signifies that it is an emote, the value indicates if it is a looping emote
+ 
+local emoteNames = { wave = false, point = false, dance1 = true, dance2 = true, dance3 = true, laugh = false, cheer = false}
+ 
+function configureAnimationSet(name, fileList)
+    if (animTable[name] ~= nil) then
+        for _, connection in pairs(animTable[name].connections) do
+            connection:disconnect()
+        end
+    end
+    animTable[name] = {}
+    animTable[name].count = 0
+    animTable[name].totalWeight = 0    
+    animTable[name].connections = {}
+    
+    -- check for config values
+    
+    local config = morph:FindFirstChild(name)
+    if (config ~= nil) then
+        --        print("Loading anims " .. name)
+        
+        table.insert(animTable[name].connections, config.ChildAdded:connect(function(child) configureAnimationSet(name, fileList) end))
+            table.insert(animTable[name].connections, config.ChildRemoved:connect(function(child) configureAnimationSet(name, fileList) end))
+                local idx = 1
+                for _, childPart in pairs(config:GetChildren()) do
+                    if (childPart:IsA("Animation")) then
+                        table.insert(animTable[name].connections, childPart.Changed:connect(function(property) configureAnimationSet(name, fileList) end))
+                            animTable[name][idx] = {}
+                            animTable[name][idx].anim = childPart
+                            local weightObject = childPart:FindFirstChild("Weight")
+                            if (weightObject == nil) then
+                                animTable[name][idx].weight = 1
+                            else
+                                animTable[name][idx].weight = weightObject.Value
+                            end
+                            animTable[name].count = animTable[name].count + 1
+                            animTable[name].totalWeight = animTable[name].totalWeight + animTable[name][idx].weight
+                            --            print(name .. " [" .. idx .. "] " .. animTable[name][idx].anim.AnimationId .. " (" .. animTable[name][idx].weight .. ")")
+                            
+                            idx = idx + 1
+                        end
+                    end
+                end
+                
+                -- fallback to defaults
+                
+                if (animTable[name].count <= 0) then
+                    for idx, anim in pairs(fileList) do
+                        animTable[name][idx] = {}
+                        animTable[name][idx].anim = Instance.new("Animation")
+                        animTable[name][idx].anim.Name = name
+                        animTable[name][idx].anim.AnimationId = anim.id
+                        animTable[name][idx].weight = anim.weight
+                        animTable[name].count = animTable[name].count + 1
+                        animTable[name].totalWeight = animTable[name].totalWeight + anim.weight
+                        --            print(name .. " [" .. idx .. "] " .. anim.id .. " (" .. anim.weight .. ")")
+                        
+                    end
+                end
+            end
+            
+            -- Setup animation objects
+            
+            function scriptChildModified(child)
+                local fileList = animNames[child.Name]
+                if (fileList ~= nil) then
+                    configureAnimationSet(child.Name, fileList)
+                end    
+            end
+            
+            morph.ChildAdded:connect(scriptChildModified)
+            morph.ChildRemoved:connect(scriptChildModified)
+            
+            
+            for name, fileList in pairs(animNames) do 
+                configureAnimationSet(name, fileList)
+            end    
+            
+            -- ANIMATION
+            
+            
+            -- declarations
+            
+            local toolAnim = "None"
+            local toolAnimTime = 0
+            
+            local jumpAnimTime = 0
+            local jumpAnimDuration = 0.3
+            
+            local toolTransitionTime = 0.1
+            local fallTransitionTime = 0.3
+            local jumpMaxLimbVelocity = 0.75
+            
+            -- functions
+            
+            
+            function stopAllAnimations()
+                local oldAnim = currentAnim
+                
+                -- return to idle if finishing an emote
+                
+                if (emoteNames[oldAnim] ~= nil and emoteNames[oldAnim] == false) then
+                    oldAnim = "idle"
+                end
+                
+                currentAnim = ""
+                currentAnimInstance = nil
+                if (currentAnimKeyframeHandler ~= nil) then
+                    currentAnimKeyframeHandler:disconnect()
+                end
+                
+                if (currentAnimTrack ~= nil) then
+                    currentAnimTrack:Stop()
+                    currentAnimTrack:Destroy()
+                    currentAnimTrack = nil
+                end
+                return oldAnim
+            end
+            
+            function setAnimationSpeed(speed)
+                if speed ~= currentAnimSpeed then
+                    currentAnimSpeed = speed
+                    currentAnimTrack:AdjustSpeed(currentAnimSpeed)
+                end
+            end
+            
+            function keyFrameReachedFunc(frameName)
+                if (frameName == "End") then
+                    
+                    local repeatAnim = currentAnim
+                    -- return to idle if finishing an emote
+                    
+                    if (emoteNames[repeatAnim] ~= nil and emoteNames[repeatAnim] == false) then
+                        repeatAnim = "idle"
+                    end
+                    
+                    local animSpeed = currentAnimSpeed
+                    playAnimation(repeatAnim, 0.0, Humanoid)
+                    setAnimationSpeed(animSpeed)
+                end
+            end
+            
+            -- Preload animations
+            
+            function playAnimation(animName, transitionTime, humanoid) 
+                
+                local roll = math.random(1, animTable[animName].totalWeight) 
+                local origRoll = roll
+                local idx = 1
+                while (roll > animTable[animName][idx].weight) do
+                    roll = roll - animTable[animName][idx].weight
+                    idx = idx + 1
+                end
+                --        print(animName .. " " .. idx .. " [" .. origRoll .. "]")
+                
+                local anim = animTable[animName][idx].anim
+                
+                -- switch animation        
+                
+                if (anim ~= currentAnimInstance) then
+                    
+                    if (currentAnimTrack ~= nil) then
+                        currentAnimTrack:Stop(transitionTime)
+                        currentAnimTrack:Destroy()
+                    end
+                    
+                    currentAnimSpeed = 1.0
+                    
+                    -- load it to the humanoid; get AnimationTrack
+                    
+                    currentAnimTrack = humanoid:LoadAnimation(anim)
+                    currentAnimTrack.Priority = Enum.AnimationPriority.Core
+                    
+                    -- play the animation
+                    
+                    currentAnimTrack:Play(transitionTime)
+                    currentAnim = animName
+                    currentAnimInstance = anim
+                    
+                    -- set up keyframe name triggers
+                    
+                    if (currentAnimKeyframeHandler ~= nil) then
+                        currentAnimKeyframeHandler:disconnect()
+                    end
+                    currentAnimKeyframeHandler = currentAnimTrack.KeyframeReached:connect(keyFrameReachedFunc)
+                    
+                end
+                
+            end
+            
+            -------------------------------------------------------------------------------------------
+            
+            -------------------------------------------------------------------------------------------
+            
+            
+            local toolAnimName = ""
+            local toolAnimTrack = nil
+            local toolAnimInstance = nil
+            local currentToolAnimKeyframeHandler = nil
+            
+            function toolKeyFrameReachedFunc(frameName)
+                if (frameName == "End") then
+                    --        print("Keyframe : ".. frameName)    
+                    
+                    playToolAnimation(toolAnimName, 0.0, Humanoid)
+                end
+            end
+            
+            
+            function playToolAnimation(animName, transitionTime, humanoid, priority)     
+                
+                local roll = math.random(1, animTable[animName].totalWeight) 
+                local origRoll = roll
+                local idx = 1
+                while (roll > animTable[animName][idx].weight) do
+                    roll = roll - animTable[animName][idx].weight
+                    idx = idx + 1
+                end
+                --        print(animName .. " * " .. idx .. " [" .. origRoll .. "]")
+                
+                local anim = animTable[animName][idx].anim
+                
+                if (toolAnimInstance ~= anim) then
+                    
+                    if (toolAnimTrack ~= nil) then
+                        toolAnimTrack:Stop()
+                        toolAnimTrack:Destroy()
+                        transitionTime = 0
+                    end
+                    
+                    -- load it to the humanoid; get AnimationTrack
+                    
+                    toolAnimTrack = humanoid:LoadAnimation(anim)
+                    if priority then
+                        toolAnimTrack.Priority = priority
+                    end
+                    
+                    -- play the animation
+                    
+                    toolAnimTrack:Play(transitionTime)
+                    toolAnimName = animName
+                    toolAnimInstance = anim
+                    
+                    currentToolAnimKeyframeHandler = toolAnimTrack.KeyframeReached:connect(toolKeyFrameReachedFunc)
+                end
+            end
+            
+            function stopToolAnimations()
+                local oldAnim = toolAnimName
+                
+                if (currentToolAnimKeyframeHandler ~= nil) then
+                    currentToolAnimKeyframeHandler:disconnect()
+                end
+                
+                toolAnimName = ""
+                toolAnimInstance = nil
+                if (toolAnimTrack ~= nil) then
+                    toolAnimTrack:Stop()
+                    toolAnimTrack:Destroy()
+                    toolAnimTrack = nil
+                end
+                
+                
+                return oldAnim
+            end
+            
+            -------------------------------------------------------------------------------------------
+            
+            -------------------------------------------------------------------------------------------
+            
+            
+            
+            function onRunning(speed)
+                if speed > 0.01 then
+                    playAnimation("walk", 0.1, Humanoid)
+                    if currentAnimInstance and currentAnimInstance.AnimationId == "http://www.roblox.com/asset/?id=180426354" then
+                        setAnimationSpeed(speed / 14.5)
+                    end
+                    pose = "Running"
+                else
+                    if emoteNames[currentAnim] == nil then
+                        playAnimation("idle", 0.1, Humanoid)
+                        pose = "Standing"
+                    end
+                end
+            end
+            
+            function onDied()
+                pose = "Dead"
+            end
+            
+            function onJumping()
+                playAnimation("jump", 0.1, Humanoid)
+                jumpAnimTime = jumpAnimDuration
+                pose = "Jumping"
+            end
+            
+            function onClimbing(speed)
+                playAnimation("climb", 0.1, Humanoid)
+                setAnimationSpeed(speed / 12.0)
+                pose = "Climbing"
+            end
+            
+            function onGettingUp()
+                pose = "GettingUp"
+            end
+            
+            function onFreeFall()
+                if (jumpAnimTime <= 0) then
+                    playAnimation("fall", fallTransitionTime, Humanoid)
+                end
+                pose = "FreeFall"
+            end
+            
+            function onFallingDown()
+                pose = "FallingDown"
+            end
+            
+            function onSeated()
+                pose = "Seated"
+            end
+            
+            function onPlatformStanding()
+                pose = "PlatformStanding"
+            end
+            
+            function onSwimming(speed)
+                if speed > 0 then
+                    pose = "Running"
+                else
+                    pose = "Standing"
+                end
+            end
+            
+            function getTool()    
+                for _, kid in ipairs(Figure:GetChildren()) do
+                    if kid.className == "Tool" then return kid end
+                end
+                return nil
+            end
+            
+            function getToolAnim(tool)
+                for _, c in ipairs(tool:GetChildren()) do
+                    if c.Name == "toolanim" and c.className == "StringValue" then
+                        return c
+                    end
+                end
+                return nil
+            end
+            
+            function animateTool()
+                
+                if (toolAnim == "None") then
+                    playToolAnimation("toolnone", toolTransitionTime, Humanoid, Enum.AnimationPriority.Idle)
+                    return
+                end
+                
+                if (toolAnim == "Slash") then
+                    playToolAnimation("toolslash", 0, Humanoid, Enum.AnimationPriority.Action)
+                    return
+                end
+                
+                if (toolAnim == "Lunge") then
+                    playToolAnimation("toollunge", 0, Humanoid, Enum.AnimationPriority.Action)
+                    return
+                end
+            end
+            
+            function moveSit()
+                RightShoulder.MaxVelocity = 0.15
+                LeftShoulder.MaxVelocity = 0.15
+                RightShoulder:SetDesiredAngle(3.14 /2)
+                LeftShoulder:SetDesiredAngle(-3.14 /2)
+                RightHip:SetDesiredAngle(3.14 /2)
+                LeftHip:SetDesiredAngle(-3.14 /2)
+            end
+            
+            local lastTick = 0
+            
+            function move(time)
+                local amplitude = 1
+                local frequency = 1
+                local deltaTime = time - lastTick
+                lastTick = time
+                
+                local climbFudge = 0
+                local setAngles = false
+                
+                if (jumpAnimTime > 0) then
+                    jumpAnimTime = jumpAnimTime - deltaTime
+                end
+                
+                if (pose == "FreeFall" and jumpAnimTime <= 0) then
+                    playAnimation("fall", fallTransitionTime, Humanoid)
+                elseif (pose == "Seated") then
+                    playAnimation("sit", 0.5, Humanoid)
+                    return
+                elseif (pose == "Running") then
+                    playAnimation("walk", 0.1, Humanoid)
+                elseif (pose == "Dead" or pose == "GettingUp" or pose == "FallingDown" or pose == "Seated" or pose == "PlatformStanding") then
+                    --        print("Wha " .. pose)
+                    
+                    stopAllAnimations()
+                    amplitude = 0.1
+                    frequency = 1
+                    setAngles = true
+                end
+                
+                if (setAngles) then
+                    local desiredAngle = amplitude * math.sin(time * frequency)
+                    
+                    RightShoulder:SetDesiredAngle(desiredAngle + climbFudge)
+                    LeftShoulder:SetDesiredAngle(desiredAngle - climbFudge)
+                    RightHip:SetDesiredAngle(-desiredAngle)
+                    LeftHip:SetDesiredAngle(-desiredAngle)
+                end
+                
+                -- Tool Animation handling
+                
+                local tool = getTool()
+                if tool and tool:FindFirstChild("Handle") then
+                    
+                    local animStringValueObject = getToolAnim(tool)
+                    
+                    if animStringValueObject then
+                        toolAnim = animStringValueObject.Value
+                        -- message recieved, delete StringValue
+                        
+                        animStringValueObject.Parent = nil
+                        toolAnimTime = time + .3
+                    end
+                    
+                    if time > toolAnimTime then
+                        toolAnimTime = 0
+                        toolAnim = "None"
+                    end
+                    
+                    animateTool()        
+                else
+                    stopToolAnimations()
+                    toolAnim = "None"
+                    toolAnimInstance = nil
+                    toolAnimTime = 0
+                end
+            end
+            
+            -- connect events
+            
+            Humanoid.Died:connect(onDied)
+            Humanoid.Running:connect(onRunning)
+            Humanoid.Jumping:connect(onJumping)
+            Humanoid.Climbing:connect(onClimbing)
+            Humanoid.GettingUp:connect(onGettingUp)
+            Humanoid.FreeFalling:connect(onFreeFall)
+            Humanoid.FallingDown:connect(onFallingDown)
+            Humanoid.Seated:connect(onSeated)
+            Humanoid.PlatformStanding:connect(onPlatformStanding)
+            Humanoid.Swimming:connect(onSwimming)
+            
+            -- setup emote chat hook
+            
+            game:GetService("Players").LocalPlayer.Chatted:connect(function(msg)
+                local emote = ""
+                if msg == "/e dance" then
+                    emote = dances[math.random(1, #dances)]
+                elseif (string.sub(msg, 1, 3) == "/e ") then
+                    emote = string.sub(msg, 4)
+                elseif (string.sub(msg, 1, 7) == "/emote ") then
+                    emote = string.sub(msg, 8)
+                end
+                
+                if (pose == "Standing" and emoteNames[emote] ~= nil) then
+                    playAnimation(emote, 0.1, Humanoid)
+                end
+                
+            end)
+            
+            
+            -- main program
+            
+            
+            -- initialize to idle
+            
+            playAnimation("idle", 0.1, Humanoid)
+            pose = "Standing"
+            
+            while Figure.Parent ~= nil do
+                local _, time = wait(0.1)
+                move(time)
+            end
+           
+------------------------------------------------------------
+----        Humanoid Health       ----
+------------------------------------------------------------
+
+
+-- Gradually regenerates the Humanoid's Health over time.
+ 
+ 
+local REGEN_RATE = 1/100 -- Regenerate this fraction of MaxHealth per second.
+ 
+local REGEN_STEP = 1 -- Wait this long between each regeneration step.
+ 
+ 
+--------------------------------------------------------------------------------
+ 
+ 
+local Character = morph
+local Humanoid = Character:WaitForChild'Humanoid'
+ 
+--------------------------------------------------------------------------------
+ 
+ 
+while true do
+    while Humanoid.Health < Humanoid.MaxHealth do
+        local dt = wait(REGEN_STEP)
+        local dh = dt*REGEN_RATE*Humanoid.MaxHealth
+        Humanoid.Health = math.min(Humanoid.Health + dh, Humanoid.MaxHealth)
+    end
+    Humanoid.HealthChanged:Wait()
+end
+
+-- This Is All R6 Function Made By 00de0l end end
+
+end)
+LMG2L["TextButton_ab"].MouseButton1Click:Connect(function()
+	
+end)
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Animate
+local function C_2a()
+	local script = LMG2L["Animate_2a"];
+	
+end;
+task.spawn(C_2a);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Sound.LocalSound
+local function C_41()
+	local script = LMG2L["LocalSound_41"];
+	
+end;
+task.spawn(C_41);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.R6.DefaultCharacter.Humanoid.Jump
+local function C_47()
+	local script = LMG2L["Jump_47"];
+	
+end;
+task.spawn(C_47);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+local function C_a6()
+	local script = LMG2L["LocalScript_a6"];
+	
+end;
+task.spawn(C_a6);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.TextButton.LocalScript
+local function C_ac()
+	local script = LMG2L["LocalScript_ac"];
+	
+end;
+task.spawn(C_ac);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_b5()
+	local script = LMG2L["LocalScript_b5"];
+	
+end;
+task.spawn(C_b5);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_b9()
+	local script = LMG2L["LocalScript_b9"];
+	
+end;
+task.spawn(C_b9);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_c5()
+	local script = LMG2L["LocalScript_c5"];
+	
+end;
+task.spawn(C_c5);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_cb()
+	local script = LMG2L["LocalScript_cb"];
+	
+end;
+task.spawn(C_cb);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_ce()
+	local script = LMG2L["LocalScript_ce"];
+	
+end;
+task.spawn(C_ce);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_d2()
+	local script = LMG2L["LocalScript_d2"];
+	
+end;
+task.spawn(C_d2);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_d5()
+	local script = LMG2L["LocalScript_d5"];
+	
+end;
+task.spawn(C_d5);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_d7()
+	local script = LMG2L["LocalScript_d7"];
+	
+end;
+task.spawn(C_d7);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_da()
+	local script = LMG2L["LocalScript_da"];
+	
+end;
+task.spawn(C_da);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_e3()
+	local script = LMG2L["LocalScript_e3"];
+	
+end;
+task.spawn(C_e3);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_e6()
+	local script = LMG2L["LocalScript_e6"];
+	
+end;
+task.spawn(C_e6);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_e9()
+	local script = LMG2L["LocalScript_e9"];
+	
+end;
+task.spawn(C_e9);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_f3()
+	local script = LMG2L["LocalScript_f3"];
+	
+end;
+task.spawn(C_f3);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.Exe.Frame.TextButton.LocalScript
+local function C_f8()
+	local script = LMG2L["LocalScript_f8"];
+	
+end;
+task.spawn(C_f8);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.TextButton.LocalScript
+local function C_101()
+	local script = LMG2L["LocalScript_101"];
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Exe.Visible = true
+	script.Parent.Parent.Credits.Visible =  false
+end)
+end;
+task.spawn(C_101);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.Gui.TextButton.LocalScript
+local function C_103()
+	local script = LMG2L["LocalScript_103"];
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Exe.Visible = false
+	script.Parent.Parent.Credits.Visible =  true
+end)
+end;
+task.spawn(C_103);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.min.LocalScript
+local function C_107()
+	local script = LMG2L["LocalScript_107"];
+	
+	local gui = script.Parent.Parent.Gui
+
+script.Parent.MouseButton1Click:Connect(function()
+	gui.Visible = not gui.Visible
+end)
+end;
+task.spawn(C_107);
+-- Players.FRP20000.PlayerGui.ScreenGui.drag.close.LocalScript
+local function C_110()
+	local script = LMG2L["LocalScript_110"];
+	
+	local drag = script.Parent.Parent
+
+script.Parent.MouseButton1Click:Connect(function()
+	drag.Visible = false
+end)
+end;
+task.spawn(C_110);
+-- Players.FRP20000.PlayerGui.ScreenGui.Icon.ImageLabel.LocalScript
+local function C_115()
+	local script = LMG2L["LocalScript_115"];
+	
+	local path = script.Parent
+
+while true do
+	wait()
+	path.Rotation = path.Rotation +3.4
+end
+end;
+task.spawn(C_115);
+local function C_116()
+	local Label = LMG2L["TextLabel_ff"]
+	Label.Text = "FSA"
+	local PlaceholderLabel = LMG2L["Field_17"]
+	PlaceholderLabel.PlaceholderText = " FSA "
+	
+	for i = 1, 30 * 27 do
+		Label.Text = "FSA ".. Label.Text
+	end
+	for i = 1, 17 * 17 do
+		PlaceholderLabel.PlaceholderText = "FSA ".. PlaceholderLabel.PlaceholderText
+	end
+	wait(1)
+	local m = Instance.new("Message", workspace)
+	m.Text = "CONVERTED BY LIONARC_HELON, BRUH EVEN SKIDDER CAN STILL REMOVE THIS CREDIT"
+	wait(5)
+	m:Destroy()
+end;
+task.spawn(C_116);
+local function C_117()
+	LMG2L["EXE_e"]["MouseButton1Click"]:Connect(function()
+		LMG2L["EXE_e"].Stroke.Color = Color3.fromRGB(0, 85, 255)
+		task.wait(0.1)
+		LMG2L["EXE_e"].Stroke.Color = Color3.fromRGB(190, 190, 190)
+	end)
+	LMG2L["TextButton_18"]["MouseButton1Click"]:Connect(function()
+		LMG2L["TextButton_18"].Stroke.Color = Color3.fromRGB(0, 85, 255)
+		task.wait(0.1)
+		LMG2L["TextButton_18"].Stroke.Color = Color3.fromRGB(190, 190, 190)
+	end)
+	LMG2L["TextButton_1c"]["MouseButton1Click"]:Connect(function()
+		LMG2L["TextButton_1c"].Stroke.Color = Color3.fromRGB(0, 85, 255)
+		task.wait(0.1)
+		LMG2L["TextButton_1c"].Stroke.Color = Color3.fromRGB(190, 190, 190)
+	end)
+	LMG2L["TextButton_ab"]["MouseButton1Click"]:Connect(function()
+		LMG2L["TextButton_ab"].Stroke.Color = Color3.fromRGB(0, 85, 255)
+		task.wait(0.1)
+		LMG2L["TextButton_ab"].Stroke.Color = Color3.fromRGB(190, 190, 190)
+	end)
+	LMG2L["TextButton_27"]["MouseButton1Click"]:Connect(function()
+		LMG2L["TextButton_27"].Stroke.Color = Color3.fromRGB(0, 85, 255)
+		task.wait(0.1)
+		LMG2L["TextButton_27"].Stroke.Color = Color3.fromRGB(190, 190, 190)
+	end)
+	LMG2L["TextButton_23"]["MouseButton1Click"]:Connect(function()
+		LMG2L["TextButton_23"].Stroke.Color = Color3.fromRGB(0, 85, 255)
+		task.wait(0.1)
+		LMG2L["TextButton_23"].Stroke.Color = Color3.fromRGB(190, 190, 190)
+	end)
+end;
+task.spawn(C_117);
+
+return LMG2L["ScreenGui_1"], require;
